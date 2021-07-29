@@ -1,0 +1,10 @@
+<div id="social">
+
+{{ range $key, $val := .Site.Social -}}
+    <a class="symbol" href="{{ $val }}" target="_blank">
+        {{- $svg :=  print "svgs/" $key ".svg" -}}
+        {{- partial $svg . -}}
+    </a>
+{{- end }}
+
+</div>

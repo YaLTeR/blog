@@ -1,0 +1,29 @@
+baseURL: https://bxt.rs
+languageCode: en-us
+title: Ivan Molodetskikh’s Webpage
+theme: mini
+
+permalinks:
+  posts: /blog/:title/
+
+markup:
+  highlight:
+    style: pygments
+
+social:
+  email: mailto:yalterz@gmail.com
+  mastodon: https://mastodon.technology/@YaLTeR
+  github: https://github.com/YaLTeR
+  twitter: https://twitter.com/YaLTeRz
+
+disableKinds:
+  - taxonomy
+  - term
+
+params:
+  author: Ivan Molodetskikh
+  subscribe: RSS
+  enableRSS: true
+
+  enableComments: false
+  enableGoogleAnalytics: false
