@@ -1,6 +1,6 @@
 <figure>
     <video controls src="{{ .Get "src" }}"></video>
     <figcaption>
-        <p>{{ .Get "caption" }}</p>
+        {{ .Inner | .Page.RenderString (dict "display" "block") }}
     </figcaption>
 </figure>

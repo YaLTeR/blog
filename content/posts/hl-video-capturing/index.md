@@ -13,7 +13,9 @@ In this post I'll show how I implemented a tool capable of recording 1920×1080@
 
 I'll also show an example of how to share an image between OpenGL and Vulkan, as the information on this admittedly uncommon use-case is still rather scarce.
 
-{{< video-figure src="capturing.mp4" caption="Recording a 1920×1080@60 video of a Half-Life speedrun demo in 3× real-time" >}}
+{{< video-figure src="capturing.mp4" >}}
+Recording a 1920×1080@60 video of a Half-Life speedrun demo in 3× real-time
+{{< /video-figure >}}
 
 ## Specialized Recording Tools
 
@@ -904,7 +906,9 @@ Even if the current encoding speed is "fast enough", GPU encoding might allow us
 
 Finally, if you're doing any sort of Vulkan development, I heavily recommend using the [validation layers](https://vulkan-tutorial.com/Drawing_a_triangle/Setup/Validation_layers) as they automatically catch many mistakes and subtle errors in Vulkan usage.
 
-{{< video-figure src="vulkan-programming.webm" caption="Average day writing Vulkan on AMD" >}}
+{{< video-figure src="vulkan-programming.webm" >}}
+Average day writing Vulkan on AMD
+{{< /video-figure >}}
 
 [Half-Life]: https://store.steampowered.com/app/70/HalfLife/
 [Vulkan]: https://en.wikipedia.org/wiki/Vulkan_(API)
