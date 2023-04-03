@@ -1,6 +1,6 @@
 <figure>
     {{ if .IsNamedParams }}
-    <img src="{{ .Get "src" }}" />
+    <img src="{{ .Get "src" }}" {{ with .Get "width" }}width="{{ . }}"{{ end }} />
     {{ else }}
     <img src="{{ .Get 0 }}" />
     {{ end }}
