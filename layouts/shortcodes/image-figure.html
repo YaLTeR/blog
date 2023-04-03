@@ -1,0 +1,10 @@
+<figure>
+    {{ if .IsNamedParams }}
+    <img src="{{ .Get "src" }}" />
+    {{ else }}
+    <img src="{{ .Get 0 }}" />
+    {{ end }}
+    <figcaption>
+        {{ .Inner | .Page.RenderString (dict "display" "block") }}
+    </figcaption>
+</figure>
