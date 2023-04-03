@@ -423,7 +423,9 @@ nav.navigation a.button {
   max-width: 700px;
   margin: 48px auto 0 auto;
   padding: 0 12px;
-  text-align: center;
+}
+#tags li {
+  margin-top: 0;
 }
 #tags .tag {
   display: inline-block;
