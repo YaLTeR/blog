@@ -24,5 +24,6 @@ params:
   subscribe: RSS
   enableRSS: true
 
+  env: production
   enableComments: false
   enableGoogleAnalytics: false
