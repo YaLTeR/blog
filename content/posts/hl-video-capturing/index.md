@@ -1,6 +1,10 @@
 ---
 title: "Fast Half-Life Video Recording with Vulkan"
 date: 2021-07-27T16:51:00+03:00
+tags:
+- bxt-rs
+- vulkan
+- half-life
 ---
 
 [Half-Life] is a famous first-person shooter released in 1998. These days Half-Life has a [vibrant speedrunning community](https://www.speedrun.com/hl1) where players try their best to complete the game as fast as humanly possible. Single-sitting speedruns, when people play through the game from start to finish, are usually streamed and recorded live. But [segmented](https://www.youtube.com/sourceruns) or [tool-assisted](https://docs.google.com/spreadsheets/d/1J53EGbAl3dASEsda0gEg-oVqtPm9sGHmy59sORU3GJM/edit?usp=sharing) speedruns—big projects that take weeks or months to complete—use demo files, which capture player actions and can be played back in-game. The demos are recorded to videos post-factum, typically at high resolution and quality. This video recording of demos can be done faster than real-time, which can save multiple real-life hours.

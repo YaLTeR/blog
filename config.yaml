@@ -16,9 +16,8 @@ social:
   github: https://github.com/YaLTeR
   twitter: https://twitter.com/YaLTeRz
 
-disableKinds:
-  - taxonomy
-  - term
+taxonomies:
+  tag: tags
 
 params:
   author: Ivan Molodetskikh

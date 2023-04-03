@@ -17,15 +17,14 @@
                       <a href="{{ .Permalink }}">
                           {{ .Title }}
                       </a>
-
-                      {{ with .Params.tags }}
-                          <div class="tags">
-                              {{ range . }}
-                                  <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
-                              {{ end }}
-                          </div>
-                      {{ end}}
                   </div>
+                  {{ with .Params.tags }}
+                      <div class="tags">
+                          {{ range . }}
+                              <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+                          {{ end }}
+                      </div>
+                  {{ end}}
                 </div>
             {{ end }}          
         </div>

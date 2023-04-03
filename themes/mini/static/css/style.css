@@ -352,6 +352,7 @@ nav.navigation a.button {
 #single .tags {
   margin-top: 24px;
   text-align: center;
+  line-height: 2;
 }
 #single .tags a {
   background: #f2f2f2;
@@ -359,6 +360,7 @@ nav.navigation a.button {
   color: #757575;
   font-size: 14px;
   margin-right: 3px;
+  white-space: nowrap;
 }
 #single .tags a:hover {
   color: #0366d6;
@@ -402,8 +404,7 @@ nav.navigation a.button {
   color: #0366d6;
 }
 #archive .group .value .tags {
-  display: inline;
-  margin-left: 7px;
+  line-height: 2;
 }
 #archive .group .value .tags a {
   background: #f2f2f2;
@@ -411,6 +412,7 @@ nav.navigation a.button {
   color: #999;
   font-size: 14px;
   margin-right: 3px;
+  white-space: nowrap;
 }
 #archive .group .value .tags a:hover {
   color: #0366d6;
