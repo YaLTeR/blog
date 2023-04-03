@@ -4,7 +4,12 @@ date: 2021-07-27T16:51:00+03:00
 tags:
 - bxt-rs
 - vulkan
+- rust
 - half-life
+summary: |
+  I describe the inner workings of my new video recording tool in bxt-rs. It can record in-game footage from Half-Life at 1920×1080@60 at up to 3 times faster than real-time on a reasonably powerful PC.
+
+  I explain the general principles of specialized video recording tools, show how the bxt-rs video recording integrates into the game loop, and how to share frame buffers between OpenGL and Vulkan. I then talk about how I implemented the color conversion, the video encoding step, and how I optimized the performance by using two threads and correct GPU memory types.
 ---
 
 [Half-Life] is a famous first-person shooter released in 1998. These days Half-Life has a [vibrant speedrunning community](https://www.speedrun.com/hl1) where players try their best to complete the game as fast as humanly possible. Single-sitting speedruns, when people play through the game from start to finish, are usually streamed and recorded live. But [segmented](https://www.youtube.com/sourceruns) or [tool-assisted](https://docs.google.com/spreadsheets/d/1J53EGbAl3dASEsda0gEg-oVqtPm9sGHmy59sORU3GJM/edit?usp=sharing) speedruns—big projects that take weeks or months to complete—use demo files, which capture player actions and can be played back in-game. The demos are recorded to videos post-factum, typically at high resolution and quality. This video recording of demos can be done faster than real-time, which can save multiple real-life hours.
@@ -12,8 +17,6 @@ tags:
 In this post I'll show how I implemented a tool capable of recording 1920×1080@60 Half-Life footage at up to 3 times faster than real-time on a reasonably powerful PC.[^1] The tool uses the [Vulkan] graphics API to capture the game's frames and convert their color space before encoding.
 
 [^1]: I did most of the development and optimization on my machine with an Intel i7-3770k CPU (overclocked to 4.2 GHz) and an AMD RX 580 GPU.
-
-<!--more-->
 
 I'll also show an example of how to share an image between OpenGL and Vulkan, as the information on this admittedly uncommon use-case is still rather scarce.
 

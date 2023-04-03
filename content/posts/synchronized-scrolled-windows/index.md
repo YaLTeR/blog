@@ -7,6 +7,8 @@ tags:
 - gtk
 - planet-gnome
 draft: true
+summary: |
+  In the new Identity update I added side-by-side comparison for images and videos. To do it, I synchronize together multiple GtkScrolledWindows. However, that's tricky to implement correctly. This post describes the problems and how to solve them.
 ---
 
 DRAFT
