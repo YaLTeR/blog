@@ -164,7 +164,7 @@ And that's it! The code we've added also comes in useful for implementing custom
 
 [^4]: Unfortunately, "Simulate Touchscreen" won't help you see this fix; you'll need a real touchpad or touchscreen. At the moment, the toggle does not change the device types that the gesture code receives, so it doesn't run our workaround code. To test Identity, I've been using the work-in-progress [Mutter SDK branch](https://gitlab.gnome.org/GNOME/mutter/-/merge_requests/1949) which has a compositor-level touchscreen emulation.
 
-## Conclusion
+## Closing Thoughts
 
 When synchronizing scrolled windows, and just dealing with GTK gesture code in general, make sure to test with different input devices, as each has its own quirks. Be careful when scrollable widgets have different sizes, or can change their size depending on the scroll position.
 
