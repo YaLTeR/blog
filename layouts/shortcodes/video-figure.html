@@ -1,9 +1,19 @@
+{{- $url := "" }}
+{{- if .IsNamedParams -}}
+    {{- $url = .Get "src" -}}
+{{- else -}}
+    {{- $url = .Get 0 -}}
+{{- end -}}
+{{- $u := urls.Parse $url -}}
+{{- if not $u.IsAbs -}}
+    {{- if strings.HasPrefix $url "/" -}}
+        {{- $url = (print .Page.Site.BaseURL (strings.TrimPrefix "/" $url)) -}}
+    {{- else -}}
+        {{- $url = (print .Page.Permalink $url) -}}
+    {{- end -}}
+{{- end -}}
 <figure>
-    {{ if .IsNamedParams }}
-    <video controls src="{{ .Get "src" }}"></video>
-    {{ else }}
-    <video controls src="{{ .Get 0 }}"></video>
-    {{ end }}
+    <video controls src="{{ $url | safeURL }}"></video>
     <figcaption>
         {{ .Inner | .Page.RenderString (dict "display" "block") }}
     </figcaption>

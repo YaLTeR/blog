@@ -1,8 +1,22 @@
+{{- $url := "" }}
+{{- if .IsNamedParams -}}
+    {{- $url = .Get "src" -}}
+{{- else -}}
+    {{- $url = .Get 0 -}}
+{{- end -}}
+{{- $u := urls.Parse $url -}}
+{{- if not $u.IsAbs -}}
+    {{- if strings.HasPrefix $url "/" -}}
+        {{- $url = (print .Page.Site.BaseURL (strings.TrimPrefix "/" $url)) -}}
+    {{- else -}}
+        {{- $url = (print .Page.Permalink $url) -}}
+    {{- end -}}
+{{- end -}}
 <figure>
     {{ if .IsNamedParams }}
-    <img src="{{ .Get "src" }}" {{ with .Get "width" }}width="{{ . }}"{{ end }} />
+    <img src="{{ $url | safeURL }}" {{ with .Get "width" }}width="{{ . }}"{{ end }} />
     {{ else }}
-    <img src="{{ .Get 0 }}" />
+    <img src="{{ $url | safeURL }}" />
     {{ end }}
     <figcaption>
         {{ .Inner | .Page.RenderString (dict "display" "block") }}

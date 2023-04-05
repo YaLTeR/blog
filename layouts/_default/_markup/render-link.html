@@ -1,9 +1,4 @@
-{{- $url := "" }}
-{{- if .IsNamedParams -}}
-    {{- $url = .Get "src" -}}
-{{- else -}}
-    {{- $url = .Get 0 -}}
-{{- end -}}
+{{- $url := .Destination -}}
 {{- $u := urls.Parse $url -}}
 {{- if not $u.IsAbs -}}
     {{- if strings.HasPrefix $url "/" -}}
@@ -12,4 +7,4 @@
         {{- $url = (print .Page.Permalink $url) -}}
     {{- end -}}
 {{- end -}}
-<video controls src="{{ $url | safeURL }}"></video>
+<a href="{{ $url | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
