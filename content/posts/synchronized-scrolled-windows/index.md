@@ -1,17 +1,14 @@
 ---
 title: "Identity v0.5 and Synchronized Scrolled Windows"
-date: 2023-04-02T18:20:58-07:00
+date: 2023-04-05T12:46:58-07:00
 tags:
 - identity
 - gnome
 - gtk
 - planet-gnome
-draft: true
 summary: |
   In the new Identity update I added side-by-side comparison for images and videos. To do it, I synchronize together multiple GtkScrolledWindows. However, that's tricky to implement correctly. This post describes the problems and how to solve them.
 ---
-
-DRAFT
 
 My university studies and work revolve around image- and video-processing algorithms. I frequently need to compare similar but subtly different output videos: to see how various algorithms solving the same problem behave, or to see the progress as I'm tweaking my own algorithm.
 
