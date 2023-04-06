@@ -1,4 +1,5 @@
-baseURL: https://bxt.rs
+# Make sure there's a trailing slash!
+baseURL: https://bxt.rs/
 languageCode: en-us
 title: Ivan Molodetskikh’s Webpage
 theme: mini
