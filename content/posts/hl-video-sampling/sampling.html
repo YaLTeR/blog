@@ -1,0 +1,162 @@
+<style>
+    #samplingPlayground {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #frames {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #frames > img {
+        width: 68px;
+        aspect-ratio: 68 / 40;
+        background-color: white;
+        margin: 0 -64px 0 0;
+        border: 2px solid white;
+        border-radius: 6px;
+        outline: 1px solid lightgray;
+    }
+
+    #frames > img:last-child {
+        margin: 0;
+    }
+
+    #frames > .sampled {
+        border-color: #009b00;
+        outline-color: #004f00;
+    }
+
+    .green {
+        color: #009b00;
+    }
+
+    #sampling {
+        display: block;
+        width: 100%;
+        max-width: 640px;
+        aspect-ratio: 16 / 9;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0.4, 0.4, 0.4, 0.8);
+    }
+
+    #samplingContainer {
+        position: relative;
+    }
+
+    #loading {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        font-family: sans-serif;
+    }
+
+    #samplingControls {
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+    }
+
+    #samplingControls input {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #exposure {
+        direction: rtl;
+    }
+</style>
+
+<figure id="samplingPlayground">
+    <div id="samplingContainer">
+        <div id="loading">Loading...</div>
+        <canvas id="sampling" width="640" height="360">Your browser does not seem to support HTML canvas.</canvas>
+    </div>
+    <div id="frames">
+        <img src="frames/01.jpg" />
+        <img src="frames/02.jpg" />
+        <img src="frames/03.jpg" />
+        <img src="frames/04.jpg" />
+        <img src="frames/05.jpg" />
+        <img src="frames/06.jpg" />
+        <img src="frames/07.jpg" />
+        <img src="frames/08.jpg" />
+        <img src="frames/09.jpg" />
+        <img src="frames/10.jpg" />
+        <img src="frames/11.jpg" />
+        <img src="frames/12.jpg" />
+        <img src="frames/13.jpg" />
+        <img src="frames/14.jpg" />
+        <img src="frames/15.jpg" />
+        <img src="frames/16.jpg" />
+        <img src="frames/17.jpg" />
+        <img src="frames/18.jpg" />
+        <img src="frames/19.jpg" />
+        <img src="frames/20.jpg" />
+        <img src="frames/21.jpg" />
+        <img src="frames/22.jpg" />
+        <img src="frames/23.jpg" />
+        <img src="frames/24.jpg" />
+        <img src="frames/25.jpg" />
+        <img src="frames/26.jpg" />
+        <img src="frames/27.jpg" />
+        <img src="frames/28.jpg" />
+        <img src="frames/29.jpg" />
+        <img src="frames/30.jpg" />
+        <img src="frames/31.jpg" />
+        <img src="frames/32.jpg" />
+        <img src="frames/33.jpg" />
+        <img src="frames/34.jpg" />
+        <img src="frames/35.jpg" />
+        <img src="frames/36.jpg" />
+        <img src="frames/37.jpg" />
+        <img src="frames/38.jpg" />
+        <img src="frames/39.jpg" />
+        <img src="frames/40.jpg" />
+        <img src="frames/41.jpg" />
+        <img src="frames/42.jpg" />
+        <img src="frames/43.jpg" />
+        <img src="frames/44.jpg" />
+        <img src="frames/45.jpg" />
+        <img src="frames/46.jpg" />
+        <img src="frames/47.jpg" />
+        <img src="frames/48.jpg" />
+        <img src="frames/49.jpg" />
+        <img src="frames/50.jpg" />
+        <img src="frames/51.jpg" />
+        <img src="frames/52.jpg" />
+        <img src="frames/53.jpg" />
+        <img src="frames/54.jpg" />
+        <img src="frames/55.jpg" />
+        <img src="frames/56.jpg" />
+        <img src="frames/57.jpg" />
+        <img src="frames/58.jpg" />
+        <img src="frames/59.jpg" />
+        <img src="frames/60.jpg" />
+    </div>
+    <div id="samplingControls">
+        <label for="fpf" id="fpfLabel">Samples per Second: 1800</label>
+        <input type="range" id="fpf" list="fpfMarkers" min="1" max="60" />
+        <datalist id="fpfMarkers">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="10"></option>
+            <option value="12"></option>
+            <option value="15"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="60"></option>
+        </datalist>
+        <label for="exposure" id="exposureLabel">Exposure: 0.5</label>
+        <input type="range" id="exposure" min="0" max="60" />
+    </div>
+</figure>
