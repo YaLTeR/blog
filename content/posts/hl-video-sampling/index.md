@@ -460,6 +460,7 @@ The [proper fix](https://github.com/YaLTeR/bxt-rs/commit/7ec7cd3e414236e0ef43eb5
 We still have to wait for the GPU to finish, but we don't have to wait right *after* starting the work.
 Instead, we can get a bit of parallelization back by waiting right *before* starting the next batch of work.
 This gets most of the fence-less performance back while working perfectly fine on both AMD and NVIDIA.
+The Mesa bug was not involved after all.
 
 Here's the performance graph to confirm it:
 
