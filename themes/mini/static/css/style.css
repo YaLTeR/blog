@@ -127,6 +127,28 @@ code {
   line-height: 1.7;
 }
 
+/* Links that run JS rather than being hyperlinks. */
+a[href="#"] {
+  text-decoration-style: dotted;
+}
+
+.fraction {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 2px;
+  line-height: normal;
+}
+
+.fraction .top, .fraction .bottom {
+  display: block;
+  font-size: smaller;
+}
+
+.fraction .bottom {
+  border-top: 1px solid black;
+}
+
 
 /* navigation */
 

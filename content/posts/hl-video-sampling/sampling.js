@@ -259,3 +259,21 @@ function setHighSPS() {
     expRange.value = 60;
     updateUI();
 }
+
+function setLowExposure() {
+    fpfRange.value = 60;
+    expRange.value = 5;
+    updateUI();
+}
+
+function setHighExposure() {
+    fpfRange.value = 60;
+    expRange.value = 60;
+    updateUI();
+}
+
+function setExposure(fraction) {
+    fpfRange.value = 60;
+    expRange.value = Math.round(fraction * 60);
+    updateUI();
+}
