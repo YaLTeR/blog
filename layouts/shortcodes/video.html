@@ -12,4 +12,6 @@
         {{- $url = (print .Page.Permalink $url) -}}
     {{- end -}}
 {{- end -}}
-<video controls src="{{ $url | safeURL }}"></video>
+<figure>
+    <video controls src="{{ $url | safeURL }}"></video>
+</figure>
