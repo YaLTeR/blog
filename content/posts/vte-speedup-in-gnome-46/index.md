@@ -202,7 +202,10 @@ This is what one of the vtebench benchmarks looks like:
 
 And here are the results:
 
-![](./vtebench.png)
+{{< image-figure "./vtebench.png" >}}
+To avoid making this plot even busier, I drew the green arrows only on one of the benchmarks.
+As you can see, other benchmarks show a similar trend.
+{{</ image-figure >}}
 
 As you can see, VTE from GNOME 46 also shows some welcome improvements here, although a lot more varied, and not quite on par with Alacritty (which renders in a separate thread from reading and parsing).
 These improvements likely come from the many other optimizations that happened in VTE during the GNOME 46 cycle.

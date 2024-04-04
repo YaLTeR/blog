@@ -1,853 +1,3633 @@
-<?xml version="1.0" encoding="utf-8"  standalone="no"?>
-<svg 
- width="1000" height="750"
- viewBox="0 0 1000 750"
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
->
-
-<title>Gnuplot</title>
-<desc>Produced by GNUPLOT 5.4 patchlevel 9 </desc>
-
-<g id="gnuplot_canvas">
-
-<rect x="0" y="0" width="1000" height="750" fill="#ffffff"/>
-<defs>
-
-	<circle id='gpDot' r='0.5' stroke-width='0.5' stroke='currentColor'/>
-	<path id='gpPt0' stroke-width='0.222' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
-	<path id='gpPt1' stroke-width='0.222' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
-	<path id='gpPt2' stroke-width='0.222' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
-	<rect id='gpPt3' stroke-width='0.222' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
-	<rect id='gpPt4' stroke-width='0.222' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
-	<circle id='gpPt5' stroke-width='0.222' stroke='currentColor' cx='0' cy='0' r='1'/>
-	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
-	<path id='gpPt7' stroke-width='0.222' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
-	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
-	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
-	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
-	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
-	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
-	<path id='gpPt13' stroke-width='0.222' stroke='currentColor' d='M0,1.330 L1.265,0.411 L0.782,-1.067 L-0.782,-1.076 L-1.265,0.411 z'/>
-	<use xlink:href='#gpPt13' id='gpPt14' fill='currentColor' stroke='none'/>
-	<filter id='textbox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
-	  <feFlood flood-color='#FFFFFF' flood-opacity='1' result='bgnd'/>
-	  <feComposite in='SourceGraphic' in2='bgnd' operator='atop'/>
-	</filter>
-	<filter id='greybox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
-	  <feFlood flood-color='lightgrey' flood-opacity='1' result='grey'/>
-	  <feComposite in='SourceGraphic' in2='grey' operator='atop'/>
-	</filter>
-</defs>
-<g fill="none" color="#FFFFFF" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M80.92,559.96 L89.92,559.96 M974.82,559.96 L965.82,559.96  '/>	<g transform="translate(72.53,563.86)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text> 0</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M80.92,492.82 L89.92,492.82 M974.82,492.82 L965.82,492.82  '/>	<g transform="translate(72.53,496.72)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text> 200</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M80.92,425.69 L89.92,425.69 M974.82,425.69 L965.82,425.69  '/>	<g transform="translate(72.53,429.59)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text> 400</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M80.92,358.55 L89.92,358.55 M974.82,358.55 L965.82,358.55  '/>	<g transform="translate(72.53,362.45)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text> 600</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M80.92,291.42 L89.92,291.42 M974.82,291.42 L965.82,291.42  '/>	<g transform="translate(72.53,295.32)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text> 800</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M80.92,224.28 L89.92,224.28 M974.82,224.28 L965.82,224.28  '/>	<g transform="translate(72.53,228.18)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text> 1000</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M80.92,157.15 L89.92,157.15 M974.82,157.15 L965.82,157.15  '/>	<g transform="translate(72.53,161.05)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text> 1200</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M80.92,90.01 L89.92,90.01 M974.82,90.01 L965.82,90.01  '/>	<g transform="translate(72.53,93.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text> 1400</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M114.01,559.96 M114.01,90.01  '/>	<g transform="translate(111.25,571.11) rotate(-315)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text>cursor_motion</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M202.91,559.96 M202.91,90.01  '/>	<g transform="translate(200.15,571.11) rotate(-315)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text>dense_cells</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M291.80,559.96 M291.80,90.01  '/>	<g transform="translate(289.04,571.11) rotate(-315)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text>light_cells</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M380.70,559.96 M380.70,90.01  '/>	<g transform="translate(377.94,571.11) rotate(-315)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text>scrolling</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M469.59,559.96 M469.59,90.01  '/>	<g transform="translate(466.83,571.11) rotate(-315)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text>scrolling_bottom_region</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M558.49,559.96 M558.49,90.01  '/>	<g transform="translate(555.73,571.11) rotate(-315)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text>scrolling_bottom_small_region</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M647.39,559.96 M647.39,90.01  '/>	<g transform="translate(644.63,571.11) rotate(-315)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text>scrolling_fullscreen</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M736.28,559.96 M736.28,90.01  '/>	<g transform="translate(733.52,571.11) rotate(-315)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text>scrolling_top_region</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M825.18,559.96 M825.18,90.01  '/>	<g transform="translate(822.42,571.11) rotate(-315)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text>scrolling_top_small_region</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M914.07,559.96 M914.07,90.01  '/>	<g transform="translate(911.31,571.11) rotate(-315)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text>unicode</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M80.92,90.01 L80.92,559.96 L974.82,559.96 L974.82,90.01 L80.92,90.01 Z  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(136, 136, 136)' stroke-dasharray='1.0,2.5'  d='M173.28,559.95 L173.28,90.00  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(136, 136, 136)' stroke-dasharray='1.0,2.5'  d='M262.18,559.95 L262.18,90.00  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(136, 136, 136)' stroke-dasharray='1.0,2.5'  d='M351.08,559.95 L351.08,90.00  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(136, 136, 136)' stroke-dasharray='1.0,2.5'  d='M439.97,559.95 L439.97,90.00  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(136, 136, 136)' stroke-dasharray='1.0,2.5'  d='M528.87,559.95 L528.87,90.00  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(136, 136, 136)' stroke-dasharray='1.0,2.5'  d='M617.76,559.95 L617.76,90.00  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(136, 136, 136)' stroke-dasharray='1.0,2.5'  d='M706.66,559.95 L706.66,90.00  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(136, 136, 136)' stroke-dasharray='1.0,2.5'  d='M795.56,559.95 L795.56,90.00  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(136, 136, 136)' stroke-dasharray='1.0,2.5'  d='M884.45,559.95 L884.45,90.00  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(19.18,324.99) rotate(270)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
-		<text>milliseconds (lower is better)</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-	<g id="gnuplot_plot_1"  fill="none"><title>gnuplot_plot_1</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(468.53,21.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text>20240404-alacritty_0.13.2_f39-300x74.dat</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.250000' points = '476.92,22.50 519.48,22.50 519.48,13.50 476.92,13.50 '/>
-		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.250000' points = '89.81,545.53 98.71,545.53 98.71,544.18 89.81,544.18 '/>
-	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M89.81,545.53 L98.71,545.53 L98.71,544.18 L89.81,544.18 L89.81,545.53 Z  '/>	<path stroke='rgb(148,   0, 211)'  d='M89.81,544.52 L98.71,544.52 M94.26,546.20 L94.26,545.53 M94.26,544.18 L94.26,542.50 M85.26,542.50 L103.26,542.50
-		M85.26,546.20 L103.26,546.20  '/></g>
-	</g>
-	<g id="gnuplot_plot_2"  fill="none"><title>gnuplot_plot_2</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.250000' points = '178.71,508.94 187.61,508.94 187.61,507.26 178.71,507.26 '/>
-	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M178.71,508.94 L187.61,508.94 L187.61,507.26 L178.71,507.26 L178.71,508.94 Z  '/>	<path stroke='rgb(148,   0, 211)'  d='M178.71,508.60 L187.61,508.60 M183.16,511.29 L183.16,508.94 M183.16,507.26 L183.16,504.91 M174.16,504.91 L192.16,504.91
-		M174.16,511.29 L192.16,511.29  '/></g>
-	</g>
-	<g id="gnuplot_plot_3"  fill="none"><title>gnuplot_plot_3</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.250000' points = '267.60,555.60 276.50,555.60 276.50,555.26 267.60,555.26 '/>
-	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M267.60,555.60 L276.50,555.60 L276.50,555.26 L267.60,555.26 L267.60,555.60 Z  '/>	<path stroke='rgb(148,   0, 211)'  d='M267.60,555.26 L276.50,555.26 M272.05,555.93 L272.05,555.60 M272.05,555.26 L272.05,554.92 M263.05,554.92 L281.05,554.92
-		M263.05,555.93 L281.05,555.93  '/></g>
-	</g>
-	<g id="gnuplot_plot_4"  fill="none"><title>gnuplot_plot_4</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.250000' points = '356.50,516.99 365.40,516.99 365.40,515.31 356.50,515.31 '/>
-	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M356.50,516.99 L365.40,516.99 L365.40,515.31 L356.50,515.31 L356.50,516.99 Z  '/>	<path stroke='rgb(148,   0, 211)'  d='M356.50,516.15 L365.40,516.15 M360.95,518.00 L360.95,516.99 M360.95,515.31 L360.95,513.64 M351.95,513.64 L369.95,513.64
-		M351.95,518.00 L369.95,518.00  '/></g>
-	</g>
-	<g id="gnuplot_plot_5"  fill="none"><title>gnuplot_plot_5</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.250000' points = '445.39,516.66 454.29,516.66 454.29,515.65 445.39,515.65 '/>
-	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M445.39,516.66 L454.29,516.66 L454.29,515.65 L445.39,515.65 L445.39,516.66 Z  '/>	<path stroke='rgb(148,   0, 211)'  d='M445.39,515.99 L454.29,515.99 M449.84,518.00 L449.84,516.66 M449.84,515.65 L449.84,514.64 M440.84,514.64 L458.84,514.64
-		M440.84,518.00 L458.84,518.00  '/></g>
-	</g>
-	<g id="gnuplot_plot_6"  fill="none"><title>gnuplot_plot_6</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.250000' points = '534.29,516.99 543.19,516.99 543.19,515.99 534.29,515.99 '/>
-	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M534.29,516.99 L543.19,516.99 L543.19,515.99 L534.29,515.99 L534.29,516.99 Z  '/>	<path stroke='rgb(148,   0, 211)'  d='M534.29,516.66 L543.19,516.66 M538.74,518.00 L538.74,516.99 M538.74,515.99 L538.74,515.31 M529.74,515.31 L547.74,515.31
-		M529.74,518.00 L547.74,518.00  '/></g>
-	</g>
-	<g id="gnuplot_plot_7"  fill="none"><title>gnuplot_plot_7</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.250000' points = '623.19,556.27 632.09,556.27 632.09,555.60 623.19,555.60 '/>
-	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M623.19,556.27 L632.09,556.27 L632.09,555.60 L623.19,555.60 L623.19,556.27 Z  '/>	<path stroke='rgb(148,   0, 211)'  d='M623.19,555.93 L632.09,555.93 M627.64,557.27 L627.64,556.27 M627.64,555.60 L627.64,555.26 M618.64,555.26 L636.64,555.26
-		M618.64,557.27 L636.64,557.27  '/></g>
-	</g>
-	<g id="gnuplot_plot_8"  fill="none"><title>gnuplot_plot_8</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.250000' points = '712.08,516.99 720.98,516.99 720.98,515.65 712.08,515.65 '/>
-	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M712.08,516.99 L720.98,516.99 L720.98,515.65 L712.08,515.65 L712.08,516.99 Z  '/>	<path stroke='rgb(148,   0, 211)'  d='M712.08,516.32 L720.98,516.32 M716.53,518.00 L716.53,516.99 M716.53,515.65 L716.53,513.64 M707.53,513.64 L725.53,513.64
-		M707.53,518.00 L725.53,518.00  '/></g>
-	</g>
-	<g id="gnuplot_plot_9"  fill="none"><title>gnuplot_plot_9</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.250000' points = '800.98,515.99 809.88,515.99 809.88,514.98 800.98,514.98 '/>
-	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M800.98,515.99 L809.88,515.99 L809.88,514.98 L800.98,514.98 L800.98,515.99 Z  '/>	<path stroke='rgb(148,   0, 211)'  d='M800.98,515.31 L809.88,515.31 M805.43,517.33 L805.43,515.99 M805.43,514.98 L805.43,514.31 M796.43,514.31 L814.43,514.31
-		M796.43,517.33 L814.43,517.33  '/></g>
-	</g>
-	<g id="gnuplot_plot_10"  fill="none"><title>gnuplot_plot_10</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.250000' points = '889.87,556.27 898.77,556.27 898.77,555.60 889.87,555.60 '/>
-	</g>
-	<path stroke='rgb(148,   0, 211)'  d='M889.87,556.27 L898.77,556.27 L898.77,555.60 L889.87,555.60 L889.87,556.27 Z  '/>	<path stroke='rgb(148,   0, 211)'  d='M889.87,555.93 L898.77,555.93 M894.32,557.27 L894.32,556.27 M894.32,555.60 L894.32,554.92 M885.32,554.92 L903.32,554.92
-		M885.32,557.27 L903.32,557.27  '/></g>
-	</g>
-	<g id="gnuplot_plot_11"  fill="none"><title>gnuplot_plot_11</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(468.53,39.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text>20240404-alacritty_0.13.2_f40-300x74.dat</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.250000' points = '476.92,40.50 519.48,40.50 519.48,31.50 476.92,31.50 '/>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.250000' points = '99.69,545.53 108.59,545.53 108.59,544.18 99.69,544.18 '/>
-	</g>
-	<path stroke='rgb(  0, 158, 115)'  d='M99.69,545.53 L108.59,545.53 L108.59,544.18 L99.69,544.18 L99.69,545.53 Z  '/>	<path stroke='rgb(  0, 158, 115)'  d='M99.69,544.52 L108.59,544.52 M104.14,545.86 L104.14,545.53 M104.14,544.18 L104.14,542.84 M95.14,542.84 L113.14,542.84
-		M95.14,545.86 L113.14,545.86  '/></g>
-	</g>
-	<g id="gnuplot_plot_12"  fill="none"><title>gnuplot_plot_12</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.250000' points = '188.58,508.94 197.48,508.94 197.48,506.92 188.58,506.92 '/>
-	</g>
-	<path stroke='rgb(  0, 158, 115)'  d='M188.58,508.94 L197.48,508.94 L197.48,506.92 L188.58,506.92 L188.58,508.94 Z  '/>	<path stroke='rgb(  0, 158, 115)'  d='M188.58,507.93 L197.48,507.93 M193.03,510.62 L193.03,508.94 M193.03,506.92 L193.03,504.24 M184.03,504.24 L202.03,504.24
-		M184.03,510.62 L202.03,510.62  '/></g>
-	</g>
-	<g id="gnuplot_plot_13"  fill="none"><title>gnuplot_plot_13</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.250000' points = '277.48,555.60 286.38,555.60 286.38,555.26 277.48,555.26 '/>
-	</g>
-	<path stroke='rgb(  0, 158, 115)'  d='M277.48,555.60 L286.38,555.60 L286.38,555.26 L277.48,555.26 L277.48,555.60 Z  '/>	<path stroke='rgb(  0, 158, 115)'  d='M277.48,555.60 L286.38,555.60 M281.93,555.93 L281.93,555.60 M281.93,555.26 L281.93,554.92 M272.93,554.92 L290.93,554.92
-		M272.93,555.93 L290.93,555.93  '/></g>
-	</g>
-	<g id="gnuplot_plot_14"  fill="none"><title>gnuplot_plot_14</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.250000' points = '366.38,516.32 375.26,516.32 375.26,515.65 366.38,515.65 '/>
-	</g>
-	<path stroke='rgb(  0, 158, 115)'  d='M366.38,516.32 L375.26,516.32 L375.26,515.65 L366.38,515.65 L366.38,516.32 Z  '/>	<path stroke='rgb(  0, 158, 115)'  d='M366.38,515.99 L375.26,515.99 M370.82,517.33 L370.82,516.32 M370.82,515.65 L370.82,514.98 M361.82,514.98 L379.82,514.98
-		M361.82,517.33 L379.82,517.33  '/></g>
-	</g>
-	<g id="gnuplot_plot_15"  fill="none"><title>gnuplot_plot_15</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.250000' points = '455.27,516.66 464.17,516.66 464.17,515.99 455.27,515.99 '/>
-	</g>
-	<path stroke='rgb(  0, 158, 115)'  d='M455.27,516.66 L464.17,516.66 L464.17,515.99 L455.27,515.99 L455.27,516.66 Z  '/>	<path stroke='rgb(  0, 158, 115)'  d='M455.27,516.32 L464.17,516.32 M459.72,516.99 L459.72,516.66 M459.72,515.99 L459.72,514.98 M450.72,514.98 L468.72,514.98
-		M450.72,516.99 L468.72,516.99  '/></g>
-	</g>
-	<g id="gnuplot_plot_16"  fill="none"><title>gnuplot_plot_16</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.250000' points = '544.17,516.99 553.07,516.99 553.07,516.66 544.17,516.66 '/>
-	</g>
-	<path stroke='rgb(  0, 158, 115)'  d='M544.17,516.99 L553.07,516.99 L553.07,516.66 L544.17,516.66 L544.17,516.99 Z  '/>	<path stroke='rgb(  0, 158, 115)'  d='M544.17,516.99 L553.07,516.99 M548.62,517.33 L548.62,516.99 M548.62,516.66 L548.62,516.32 M539.62,516.32 L557.62,516.32
-		M539.62,517.33 L557.62,517.33  '/></g>
-	</g>
-	<g id="gnuplot_plot_17"  fill="none"><title>gnuplot_plot_17</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.250000' points = '633.06,556.27 641.96,556.27 641.96,555.60 633.06,555.60 '/>
-	</g>
-	<path stroke='rgb(  0, 158, 115)'  d='M633.06,556.27 L641.96,556.27 L641.96,555.60 L633.06,555.60 L633.06,556.27 Z  '/>	<path stroke='rgb(  0, 158, 115)'  d='M633.06,555.93 L641.96,555.93 M637.51,557.27 L637.51,556.27 M637.51,555.60 L637.51,554.92 M628.51,554.92 L646.51,554.92
-		M628.51,557.27 L646.51,557.27  '/></g>
-	</g>
-	<g id="gnuplot_plot_18"  fill="none"><title>gnuplot_plot_18</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.250000' points = '721.96,516.66 730.86,516.66 730.86,515.99 721.96,515.99 '/>
-	</g>
-	<path stroke='rgb(  0, 158, 115)'  d='M721.96,516.66 L730.86,516.66 L730.86,515.99 L721.96,515.99 L721.96,516.66 Z  '/>	<path stroke='rgb(  0, 158, 115)'  d='M721.96,516.32 L730.86,516.32 M726.41,517.33 L726.41,516.66 M726.41,515.99 L726.41,514.98 M717.41,514.98 L735.41,514.98
-		M717.41,517.33 L735.41,517.33  '/></g>
-	</g>
-	<g id="gnuplot_plot_19"  fill="none"><title>gnuplot_plot_19</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.250000' points = '810.86,516.66 819.76,516.66 819.76,515.99 810.86,515.99 '/>
-	</g>
-	<path stroke='rgb(  0, 158, 115)'  d='M810.86,516.66 L819.76,516.66 L819.76,515.99 L810.86,515.99 L810.86,516.66 Z  '/>	<path stroke='rgb(  0, 158, 115)'  d='M810.86,516.32 L819.76,516.32 M815.31,517.66 L815.31,516.66 M815.31,515.99 L815.31,514.98 M806.31,514.98 L824.31,514.98
-		M806.31,517.66 L824.31,517.66  '/></g>
-	</g>
-	<g id="gnuplot_plot_20"  fill="none"><title>gnuplot_plot_20</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.250000' points = '899.75,556.27 908.65,556.27 908.65,555.60 899.75,555.60 '/>
-	</g>
-	<path stroke='rgb(  0, 158, 115)'  d='M899.75,556.27 L908.65,556.27 L908.65,555.60 L899.75,555.60 L899.75,556.27 Z  '/>	<path stroke='rgb(  0, 158, 115)'  d='M899.75,555.93 L908.65,555.93 M904.20,557.27 L904.20,556.27 M904.20,555.60 L904.20,554.59 M895.20,554.59 L913.20,554.59
-		M895.20,557.27 L913.20,557.27  '/></g>
-	</g>
-	<g id="gnuplot_plot_21"  fill="none"><title>gnuplot_plot_21</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(468.53,57.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text>20240404-kgx_45_f39-300x74.dat</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb( 86, 180, 233)' fill-opacity = '0.250000' points = '476.92,58.50 519.48,58.50 519.48,49.50 476.92,49.50 '/>
-		<polygon fill = 'rgb( 86, 180, 233)' fill-opacity = '0.250000' points = '109.56,537.47 118.46,537.47 118.46,534.78 109.56,534.78 '/>
-	</g>
-	<path stroke='rgb( 86, 180, 233)'  d='M109.56,537.47 L118.46,537.47 L118.46,534.78 L109.56,534.78 L109.56,537.47 Z  '/>	<path stroke='rgb( 86, 180, 233)'  d='M109.56,537.13 L118.46,537.13 M114.01,538.81 L114.01,537.47 M114.01,534.78 L114.01,530.76 M105.01,530.76 L123.01,530.76
-		M105.01,538.81 L123.01,538.81  '/></g>
-	</g>
-	<g id="gnuplot_plot_22"  fill="none"><title>gnuplot_plot_22</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-	</g>
-	<g id="gnuplot_plot_23"  fill="none"><title>gnuplot_plot_23</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb( 86, 180, 233)' fill-opacity = '0.250000' points = '287.36,559.29 296.26,559.29 296.26,558.95 287.36,558.95 '/>
-	</g>
-	<path stroke='rgb( 86, 180, 233)'  d='M287.36,559.29 L296.26,559.29 L296.26,558.95 L287.36,558.95 L287.36,559.29 Z  '/>	<path stroke='rgb( 86, 180, 233)'  d='M287.36,558.95 L296.26,558.95 M291.81,559.29 M291.81,558.95 M282.81,558.95 L300.81,558.95 M282.81,559.29 L300.81,559.29
-		 '/></g>
-	</g>
-	<g id="gnuplot_plot_24"  fill="none"><title>gnuplot_plot_24</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb( 86, 180, 233)' fill-opacity = '0.250000' points = '376.25,467.31 385.15,467.31 385.15,461.61 376.25,461.61 '/>
-	</g>
-	<path stroke='rgb( 86, 180, 233)'  d='M376.25,467.31 L385.15,467.31 L385.15,461.61 L376.25,461.61 L376.25,467.31 Z  '/>	<path stroke='rgb( 86, 180, 233)'  d='M376.25,465.30 L385.15,465.30 M380.70,475.37 L380.70,467.31 M380.70,461.61 L380.70,454.22 M371.70,454.22 L389.70,454.22
-		M371.70,475.37 L389.70,475.37  '/></g>
-	</g>
-	<g id="gnuplot_plot_25"  fill="none"><title>gnuplot_plot_25</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb( 86, 180, 233)' fill-opacity = '0.250000' points = '465.15,486.45 474.05,486.45 474.05,481.41 465.15,481.41 '/>
-	</g>
-	<path stroke='rgb( 86, 180, 233)'  d='M465.15,486.45 L474.05,486.45 L474.05,481.41 L465.15,481.41 L465.15,486.45 Z  '/>	<path stroke='rgb( 86, 180, 233)'  d='M465.15,484.10 L474.05,484.10 M469.60,493.50 L469.60,486.45 M469.60,481.41 L469.60,477.38 M460.60,477.38 L478.60,477.38
-		M460.60,493.50 L478.60,493.50  '/></g>
-	</g>
-	<g id="gnuplot_plot_26"  fill="none"><title>gnuplot_plot_26</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb( 86, 180, 233)' fill-opacity = '0.250000' points = '554.04,483.76 562.94,483.76 562.94,478.05 554.04,478.05 '/>
-	</g>
-	<path stroke='rgb( 86, 180, 233)'  d='M554.04,483.76 L562.94,483.76 L562.94,478.05 L554.04,478.05 L554.04,483.76 Z  '/>	<path stroke='rgb( 86, 180, 233)'  d='M554.04,481.08 L562.94,481.08 M558.49,492.15 L558.49,483.76 M558.49,478.05 L558.49,471.34 M549.49,471.34 L567.49,471.34
-		M549.49,492.15 L567.49,492.15  '/></g>
-	</g>
-	<g id="gnuplot_plot_27"  fill="none"><title>gnuplot_plot_27</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb( 86, 180, 233)' fill-opacity = '0.250000' points = '642.94,558.95 651.84,558.95 651.84,538.14 642.94,538.14 '/>
-	</g>
-	<path stroke='rgb( 86, 180, 233)'  d='M642.94,558.95 L651.84,558.95 L651.84,538.14 L642.94,538.14 L642.94,558.95 Z  '/>	<path stroke='rgb( 86, 180, 233)'  d='M642.94,546.53 L651.84,546.53 M647.39,558.95 M647.39,538.14 L647.39,530.08 M638.39,530.08 L656.39,530.08 M638.39,558.95
-		L656.39,558.95  '/></g>
-	</g>
-	<g id="gnuplot_plot_28"  fill="none"><title>gnuplot_plot_28</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb( 86, 180, 233)' fill-opacity = '0.250000' points = '731.84,478.39 740.74,478.39 740.74,464.96 731.84,464.96 '/>
-	</g>
-	<path stroke='rgb( 86, 180, 233)'  d='M731.84,478.39 L740.74,478.39 L740.74,464.96 L731.84,464.96 L731.84,478.39 Z  '/>	<path stroke='rgb( 86, 180, 233)'  d='M731.84,471.84 L740.74,471.84 M736.29,481.41 L736.29,478.39 M736.29,464.96 L736.29,454.89 M727.29,454.89 L745.29,454.89
-		M727.29,481.41 L745.29,481.41  '/></g>
-	</g>
-	<g id="gnuplot_plot_29"  fill="none"><title>gnuplot_plot_29</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb( 86, 180, 233)' fill-opacity = '0.250000' points = '820.73,487.96 829.63,487.96 829.63,479.06 820.73,479.06 '/>
-	</g>
-	<path stroke='rgb( 86, 180, 233)'  d='M820.73,487.96 L829.63,487.96 L829.63,479.06 L820.73,479.06 L820.73,487.96 Z  '/>	<path stroke='rgb( 86, 180, 233)'  d='M820.73,482.42 L829.63,482.42 M825.18,492.49 L825.18,487.96 M825.18,479.06 L825.18,471.68 M816.18,471.68 L834.18,471.68
-		M816.18,492.49 L834.18,492.49  '/></g>
-	</g>
-	<g id="gnuplot_plot_30"  fill="none"><title>gnuplot_plot_30</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb( 86, 180, 233)' fill-opacity = '0.250000' points = '909.63,550.56 918.53,550.56 918.53,314.91 909.63,314.91 '/>
-	</g>
-	<path stroke='rgb( 86, 180, 233)'  d='M909.63,550.56 L918.53,550.56 L918.53,314.91 L909.63,314.91 L909.63,550.56 Z  '/>	<path stroke='rgb( 86, 180, 233)'  d='M909.63,415.28 L918.53,415.28 M914.08,559.29 L914.08,550.56 M914.08,314.91 L914.08,229.65 M905.08,229.65 L923.08,229.65
-		M905.08,559.29 L923.08,559.29  '/></g>
-	</g>
-	<g id="gnuplot_plot_31"  fill="none"><title>gnuplot_plot_31</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(468.53,75.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text>20240404-kgx_46_f40-300x74.dat</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(230, 159,   0)' fill-opacity = '0.250000' points = '476.92,76.50 519.48,76.50 519.48,67.50 476.92,67.50 '/>
-		<polygon fill = 'rgb(230, 159,   0)' fill-opacity = '0.250000' points = '119.44,540.49 128.34,540.49 128.34,536.13 119.44,536.13 '/>
-	</g>
-	<path stroke='rgb(230, 159,   0)'  d='M119.44,540.49 L128.34,540.49 L128.34,536.13 L119.44,536.13 L119.44,540.49 Z  '/>	<path stroke='rgb(230, 159,   0)'  d='M119.44,538.14 L128.34,538.14 M123.89,546.20 L123.89,540.49 M123.89,536.13 L123.89,529.75 M114.89,529.75 L132.89,529.75
-		M114.89,546.20 L132.89,546.20  '/></g>
-	</g>
-	<g id="gnuplot_plot_32"  fill="none"><title>gnuplot_plot_32</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(230, 159,   0)' fill-opacity = '0.250000' points = '208.34,437.10 217.24,437.10 217.24,339.08 208.34,339.08 '/>
-	</g>
-	<path stroke='rgb(230, 159,   0)'  d='M208.34,437.10 L217.24,437.10 L217.24,339.08 L208.34,339.08 L208.34,437.10 Z  '/>	<path stroke='rgb(230, 159,   0)'  d='M208.34,382.05 L217.24,382.05 M212.79,476.38 L212.79,437.10 M212.79,339.08 L212.79,283.36 M203.79,283.36 L221.79,283.36
-		M203.79,476.38 L221.79,476.38  '/></g>
-	</g>
-	<g id="gnuplot_plot_33"  fill="none"><title>gnuplot_plot_33</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(230, 159,   0)' fill-opacity = '0.250000' points = '297.23,559.29 306.13,559.29 306.13,557.61 297.23,557.61 '/>
-	</g>
-	<path stroke='rgb(230, 159,   0)'  d='M297.23,559.29 L306.13,559.29 L306.13,557.61 L297.23,557.61 L297.23,559.29 Z  '/>	<path stroke='rgb(230, 159,   0)'  d='M297.23,557.95 L306.13,557.95 M301.68,559.29 M301.68,557.61 L301.68,555.26 M292.68,555.26 L310.68,555.26 M292.68,559.29
-		L310.68,559.29  '/></g>
-	</g>
-	<g id="gnuplot_plot_34"  fill="none"><title>gnuplot_plot_34</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(230, 159,   0)' fill-opacity = '0.250000' points = '386.13,503.23 395.03,503.23 395.03,499.87 386.13,499.87 '/>
-	</g>
-	<path stroke='rgb(230, 159,   0)'  d='M386.13,503.23 L395.03,503.23 L395.03,499.87 L386.13,499.87 L386.13,503.23 Z  '/>	<path stroke='rgb(230, 159,   0)'  d='M386.13,502.22 L395.03,502.22 M390.58,504.91 L390.58,503.23 M390.58,499.87 L390.58,497.19 M381.58,497.19 L399.58,497.19
-		M381.58,504.91 L399.58,504.91  '/></g>
-	</g>
-	<g id="gnuplot_plot_35"  fill="none"><title>gnuplot_plot_35</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(230, 159,   0)' fill-opacity = '0.250000' points = '475.03,509.27 483.93,509.27 483.93,506.25 475.03,506.25 '/>
-	</g>
-	<path stroke='rgb(230, 159,   0)'  d='M475.03,509.27 L483.93,509.27 L483.93,506.25 L475.03,506.25 L475.03,509.27 Z  '/>	<path stroke='rgb(230, 159,   0)'  d='M475.03,508.27 L483.93,508.27 M479.48,510.95 L479.48,509.27 M479.48,506.25 L479.48,503.57 M470.48,503.57 L488.48,503.57
-		M470.48,510.95 L488.48,510.95  '/></g>
-	</g>
-	<g id="gnuplot_plot_36"  fill="none"><title>gnuplot_plot_36</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(230, 159,   0)' fill-opacity = '0.250000' points = '563.92,506.25 572.82,506.25 572.82,502.56 563.92,502.56 '/>
-	</g>
-	<path stroke='rgb(230, 159,   0)'  d='M563.92,506.25 L572.82,506.25 L572.82,502.56 L563.92,502.56 L563.92,506.25 Z  '/>	<path stroke='rgb(230, 159,   0)'  d='M563.92,504.57 L572.82,504.57 M568.37,508.94 L568.37,506.25 M568.37,502.56 L568.37,499.54 M559.37,499.54 L577.37,499.54
-		M559.37,508.94 L577.37,508.94  '/></g>
-	</g>
-	<g id="gnuplot_plot_37"  fill="none"><title>gnuplot_plot_37</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(230, 159,   0)' fill-opacity = '0.250000' points = '652.82,557.95 661.72,557.95 661.72,554.59 652.82,554.59 '/>
-	</g>
-	<path stroke='rgb(230, 159,   0)'  d='M652.82,557.95 L661.72,557.95 L661.72,554.59 L652.82,554.59 L652.82,557.95 Z  '/>	<path stroke='rgb(230, 159,   0)'  d='M652.82,556.10 L661.72,556.10 M657.27,558.95 L657.27,557.95 M657.27,554.59 L657.27,550.23 M648.27,550.23 L666.27,550.23
-		M648.27,558.95 L666.27,558.95  '/></g>
-	</g>
-	<g id="gnuplot_plot_38"  fill="none"><title>gnuplot_plot_38</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(230, 159,   0)' fill-opacity = '0.250000' points = '741.71,495.17 750.61,495.17 750.61,491.82 741.71,491.82 '/>
-	</g>
-	<path stroke='rgb(230, 159,   0)'  d='M741.71,495.17 L750.61,495.17 L750.61,491.82 L741.71,491.82 L741.71,495.17 Z  '/>	<path stroke='rgb(230, 159,   0)'  d='M741.71,493.83 L750.61,493.83 M746.16,499.87 L746.16,495.17 M746.16,491.82 L746.16,487.45 M737.16,487.45 L755.16,487.45
-		M737.16,499.87 L755.16,499.87  '/></g>
-	</g>
-	<g id="gnuplot_plot_39"  fill="none"><title>gnuplot_plot_39</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(230, 159,   0)' fill-opacity = '0.250000' points = '830.61,503.57 839.51,503.57 839.51,500.88 830.61,500.88 '/>
-	</g>
-	<path stroke='rgb(230, 159,   0)'  d='M830.61,503.57 L839.51,503.57 L839.51,500.88 L830.61,500.88 L830.61,503.57 Z  '/>	<path stroke='rgb(230, 159,   0)'  d='M830.61,502.56 L839.51,502.56 M835.06,506.59 L835.06,503.57 M835.06,500.88 L835.06,497.52 M826.06,497.52 L844.06,497.52
-		M826.06,506.59 L844.06,506.59  '/></g>
-	</g>
-	<g id="gnuplot_plot_40"  fill="none"><title>gnuplot_plot_40</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(230, 159,   0)' fill-opacity = '0.250000' points = '919.51,559.29 928.41,559.29 928.41,508.94 919.51,508.94 '/>
-	</g>
-	<path stroke='rgb(230, 159,   0)'  d='M919.51,559.29 L928.41,559.29 L928.41,508.94 L919.51,508.94 L919.51,559.29 Z  '/>	<path stroke='rgb(230, 159,   0)'  d='M919.51,535.46 L928.41,535.46 M923.96,559.29 M923.96,508.94 L923.96,460.26 M914.96,460.26 L932.96,460.26 M914.96,559.29
-		L932.96,559.29  '/></g>
-	</g>
-	<g id="gnuplot_plot_41"  fill="none"><title>gnuplot_plot_41</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(905.42,21.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text>20240404-vte_0.74.2_f39-300x74.dat</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(240, 228,  66)' fill-opacity = '0.250000' points = '913.81,22.50 956.37,22.50 956.37,13.50 913.81,13.50 '/>
-		<polygon fill = 'rgb(240, 228,  66)' fill-opacity = '0.250000' points = '129.32,537.13 138.22,537.13 138.22,535.12 129.32,535.12 '/>
-	</g>
-	<path stroke='rgb(240, 228,  66)'  d='M129.32,537.13 L138.22,537.13 L138.22,535.12 L129.32,535.12 L129.32,537.13 Z  '/>	<path stroke='rgb(240, 228,  66)'  d='M129.32,536.13 L138.22,536.13 M133.77,539.15 L133.77,537.13 M133.77,535.12 L133.77,532.10 M124.77,532.10 L142.77,532.10
-		M124.77,539.15 L142.77,539.15  '/></g>
-	</g>
-	<g id="gnuplot_plot_42"  fill="none"><title>gnuplot_plot_42</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-	</g>
-	<g id="gnuplot_plot_43"  fill="none"><title>gnuplot_plot_43</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(240, 228,  66)' fill-opacity = '0.250000' points = '307.11,559.29 316.01,559.29 316.01,559.29 307.11,559.29 '/>
-	</g>
-	<path stroke='rgb(240, 228,  66)'  d='M307.11,559.29 L316.01,559.29 L307.11,559.29 Z  '/>	<path stroke='rgb(240, 228,  66)'  d='M307.11,559.29 L316.01,559.29 M311.56,559.29 M302.56,559.29 L320.56,559.29 M302.56,559.29 L320.56,559.29  '/></g>
-	</g>
-	<g id="gnuplot_plot_44"  fill="none"><title>gnuplot_plot_44</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(240, 228,  66)' fill-opacity = '0.250000' points = '396.01,475.37 404.91,475.37 404.91,470.17 396.01,470.17 '/>
-	</g>
-	<path stroke='rgb(240, 228,  66)'  d='M396.01,475.37 L404.91,475.37 L404.91,470.17 L396.01,470.17 L396.01,475.37 Z  '/>	<path stroke='rgb(240, 228,  66)'  d='M396.01,471.51 L404.91,471.51 M400.46,483.09 L400.46,475.37 M400.46,470.17 L400.46,464.29 M391.46,464.29 L409.46,464.29
-		M391.46,483.09 L409.46,483.09  '/></g>
-	</g>
-	<g id="gnuplot_plot_45"  fill="none"><title>gnuplot_plot_45</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(240, 228,  66)' fill-opacity = '0.250000' points = '484.90,492.82 493.80,492.82 493.80,485.78 484.90,485.78 '/>
-	</g>
-	<path stroke='rgb(240, 228,  66)'  d='M484.90,492.82 L493.80,492.82 L493.80,485.78 L484.90,485.78 L484.90,492.82 Z  '/>	<path stroke='rgb(240, 228,  66)'  d='M484.90,487.12 L493.80,487.12 M489.35,500.54 L489.35,492.82 M489.35,485.78 L489.35,479.73 M480.35,479.73 L498.35,479.73
-		M480.35,500.54 L498.35,500.54  '/></g>
-	</g>
-	<g id="gnuplot_plot_46"  fill="none"><title>gnuplot_plot_46</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(240, 228,  66)' fill-opacity = '0.250000' points = '573.80,487.45 582.70,487.45 582.70,482.08 573.80,482.08 '/>
-	</g>
-	<path stroke='rgb(240, 228,  66)'  d='M573.80,487.45 L582.70,487.45 L582.70,482.08 L573.80,482.08 L573.80,487.45 Z  '/>	<path stroke='rgb(240, 228,  66)'  d='M573.80,485.44 L582.70,485.44 M578.25,493.16 L578.25,487.45 M578.25,482.08 L578.25,475.70 M569.25,475.70 L587.25,475.70
-		M569.25,493.16 L587.25,493.16  '/></g>
-	</g>
-	<g id="gnuplot_plot_47"  fill="none"><title>gnuplot_plot_47</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(240, 228,  66)' fill-opacity = '0.250000' points = '662.70,558.95 671.60,558.95 671.60,541.50 662.70,541.50 '/>
-	</g>
-	<path stroke='rgb(240, 228,  66)'  d='M662.70,558.95 L671.60,558.95 L671.60,541.50 L662.70,541.50 L662.70,558.95 Z  '/>	<path stroke='rgb(240, 228,  66)'  d='M662.70,558.95 L671.60,558.95 M667.15,558.95 M667.15,541.50 L667.15,531.43 M658.15,531.43 L676.15,531.43 M658.15,558.95
-		L676.15,558.95  '/></g>
-	</g>
-	<g id="gnuplot_plot_48"  fill="none"><title>gnuplot_plot_48</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(240, 228,  66)' fill-opacity = '0.250000' points = '751.59,479.73 760.49,479.73 760.49,468.99 751.59,468.99 '/>
-	</g>
-	<path stroke='rgb(240, 228,  66)'  d='M751.59,479.73 L760.49,479.73 L760.49,468.99 L751.59,468.99 L751.59,479.73 Z  '/>	<path stroke='rgb(240, 228,  66)'  d='M751.59,474.70 L760.49,474.70 M756.04,489.47 L756.04,479.73 M756.04,468.99 L756.04,455.90 M747.04,455.90 L765.04,455.90
-		M747.04,489.47 L765.04,489.47  '/></g>
-	</g>
-	<g id="gnuplot_plot_49"  fill="none"><title>gnuplot_plot_49</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(240, 228,  66)' fill-opacity = '0.250000' points = '840.49,491.15 849.39,491.15 849.39,483.76 840.49,483.76 '/>
-	</g>
-	<path stroke='rgb(240, 228,  66)'  d='M840.49,491.15 L849.39,491.15 L849.39,483.76 L840.49,483.76 L840.49,491.15 Z  '/>	<path stroke='rgb(240, 228,  66)'  d='M840.49,486.61 L849.39,486.61 M844.94,498.87 L844.94,491.15 M844.94,483.76 L844.94,476.71 M835.94,476.71 L853.94,476.71
-		M835.94,498.87 L853.94,498.87  '/></g>
-	</g>
-	<g id="gnuplot_plot_50"  fill="none"><title>gnuplot_plot_50</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(240, 228,  66)' fill-opacity = '0.250000' points = '929.38,551.06 938.28,551.06 938.28,347.64 929.38,347.64 '/>
-	</g>
-	<path stroke='rgb(240, 228,  66)'  d='M929.38,551.06 L938.28,551.06 L938.28,347.64 L929.38,347.64 L929.38,551.06 Z  '/>	<path stroke='rgb(240, 228,  66)'  d='M929.38,441.80 L938.28,441.80 M933.83,559.29 L933.83,551.06 M933.83,347.64 L933.83,116.19 M924.83,116.19 L942.83,116.19
-		M924.83,559.29 L942.83,559.29  '/></g>
-	</g>
-	<g id="gnuplot_plot_51"  fill="none"><title>gnuplot_plot_51</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(905.42,39.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text>20240404-vte_0.76.0_f40-300x74.dat</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 114, 178)' fill-opacity = '0.250000' points = '913.81,40.50 956.37,40.50 956.37,31.50 913.81,31.50 '/>
-		<polygon fill = 'rgb(  0, 114, 178)' fill-opacity = '0.250000' points = '139.20,541.50 148.10,541.50 148.10,535.12 139.20,535.12 '/>
-	</g>
-	<path stroke='rgb(  0, 114, 178)'  d='M139.20,541.50 L148.10,541.50 L148.10,535.12 L139.20,535.12 L139.20,541.50 Z  '/>	<path stroke='rgb(  0, 114, 178)'  d='M139.20,537.81 L148.10,537.81 M143.65,547.54 L143.65,541.50 M143.65,535.12 L143.65,528.74 M134.65,528.74 L152.65,528.74
-		M134.65,547.54 L152.65,547.54  '/></g>
-	</g>
-	<g id="gnuplot_plot_52"  fill="none"><title>gnuplot_plot_52</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 114, 178)' fill-opacity = '0.250000' points = '228.09,437.77 236.99,437.77 236.99,386.41 228.09,386.41 '/>
-	</g>
-	<path stroke='rgb(  0, 114, 178)'  d='M228.09,437.77 L236.99,437.77 L236.99,386.41 L228.09,386.41 L228.09,437.77 Z  '/>	<path stroke='rgb(  0, 114, 178)'  d='M228.09,415.62 L236.99,415.62 M232.54,476.38 L232.54,437.77 M232.54,386.41 L232.54,318.94 M223.54,318.94 L241.54,318.94
-		M223.54,476.38 L241.54,476.38  '/></g>
-	</g>
-	<g id="gnuplot_plot_53"  fill="none"><title>gnuplot_plot_53</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 114, 178)' fill-opacity = '0.250000' points = '316.99,559.29 325.89,559.29 325.89,557.61 316.99,557.61 '/>
-	</g>
-	<path stroke='rgb(  0, 114, 178)'  d='M316.99,559.29 L325.89,559.29 L325.89,557.61 L316.99,557.61 L316.99,559.29 Z  '/>	<path stroke='rgb(  0, 114, 178)'  d='M316.99,558.28 L325.89,558.28 M321.44,559.62 L321.44,559.29 M321.44,557.61 L321.44,555.26 M312.44,555.26 L330.44,555.26
-		M312.44,559.62 L330.44,559.62  '/></g>
-	</g>
-	<g id="gnuplot_plot_54"  fill="none"><title>gnuplot_plot_54</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 114, 178)' fill-opacity = '0.250000' points = '405.88,505.58 414.78,505.58 414.78,503.90 405.88,503.90 '/>
-	</g>
-	<path stroke='rgb(  0, 114, 178)'  d='M405.88,505.58 L414.78,505.58 L414.78,503.90 L405.88,503.90 L405.88,505.58 Z  '/>	<path stroke='rgb(  0, 114, 178)'  d='M405.88,504.91 L414.78,504.91 M410.33,506.92 L410.33,505.58 M410.33,503.90 L410.33,502.22 M401.33,502.22 L419.33,502.22
-		M401.33,506.92 L419.33,506.92  '/></g>
-	</g>
-	<g id="gnuplot_plot_55"  fill="none"><title>gnuplot_plot_55</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 114, 178)' fill-opacity = '0.250000' points = '494.78,507.59 503.68,507.59 503.68,505.92 494.78,505.92 '/>
-	</g>
-	<path stroke='rgb(  0, 114, 178)'  d='M494.78,507.59 L503.68,507.59 L503.68,505.92 L494.78,505.92 L494.78,507.59 Z  '/>	<path stroke='rgb(  0, 114, 178)'  d='M494.78,506.59 L503.68,506.59 M499.23,509.27 L499.23,507.59 M499.23,505.92 L499.23,504.24 M490.23,504.24 L508.23,504.24
-		M490.23,509.27 L508.23,509.27  '/></g>
-	</g>
-	<g id="gnuplot_plot_56"  fill="none"><title>gnuplot_plot_56</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 114, 178)' fill-opacity = '0.250000' points = '583.68,504.57 592.58,504.57 592.58,502.56 583.68,502.56 '/>
-	</g>
-	<path stroke='rgb(  0, 114, 178)'  d='M583.68,504.57 L592.58,504.57 L592.58,502.56 L583.68,502.56 L583.68,504.57 Z  '/>	<path stroke='rgb(  0, 114, 178)'  d='M583.68,503.23 L592.58,503.23 M588.13,506.59 L588.13,504.57 M588.13,502.56 L588.13,500.21 M579.13,500.21 L597.13,500.21
-		M579.13,506.59 L597.13,506.59  '/></g>
-	</g>
-	<g id="gnuplot_plot_57"  fill="none"><title>gnuplot_plot_57</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 114, 178)' fill-opacity = '0.250000' points = '672.57,558.62 681.47,558.62 681.47,555.26 672.57,555.26 '/>
-	</g>
-	<path stroke='rgb(  0, 114, 178)'  d='M672.57,558.62 L681.47,558.62 L681.47,555.26 L672.57,555.26 L672.57,558.62 Z  '/>	<path stroke='rgb(  0, 114, 178)'  d='M672.57,556.60 L681.47,556.60 M677.02,558.95 L677.02,558.62 M677.02,555.26 L677.02,550.23 M668.02,550.23 L686.02,550.23
-		M668.02,558.95 L686.02,558.95  '/></g>
-	</g>
-	<g id="gnuplot_plot_58"  fill="none"><title>gnuplot_plot_58</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 114, 178)' fill-opacity = '0.250000' points = '761.47,496.01 770.37,496.01 770.37,493.16 761.47,493.16 '/>
-	</g>
-	<path stroke='rgb(  0, 114, 178)'  d='M761.47,496.01 L770.37,496.01 L770.37,493.16 L761.47,493.16 L761.47,496.01 Z  '/>	<path stroke='rgb(  0, 114, 178)'  d='M761.47,495.01 L770.37,495.01 M765.92,499.54 L765.92,496.01 M765.92,493.16 L765.92,489.47 M756.92,489.47 L774.92,489.47
-		M756.92,499.54 L774.92,499.54  '/></g>
-	</g>
-	<g id="gnuplot_plot_59"  fill="none"><title>gnuplot_plot_59</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 114, 178)' fill-opacity = '0.250000' points = '850.37,504.24 859.27,504.24 859.27,501.55 850.37,501.55 '/>
-	</g>
-	<path stroke='rgb(  0, 114, 178)'  d='M850.37,504.24 L859.27,504.24 L859.27,501.55 L850.37,501.55 L850.37,504.24 Z  '/>	<path stroke='rgb(  0, 114, 178)'  d='M850.37,502.89 L859.27,502.89 M854.82,506.59 L854.82,504.24 M854.82,501.55 L854.82,498.53 M845.82,498.53 L863.82,498.53
-		M845.82,506.59 L863.82,506.59  '/></g>
-	</g>
-	<g id="gnuplot_plot_60"  fill="none"><title>gnuplot_plot_60</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 114, 178)' fill-opacity = '0.250000' points = '939.26,531.43 948.16,531.43 948.16,481.75 939.26,481.75 '/>
-	</g>
-	<path stroke='rgb(  0, 114, 178)'  d='M939.26,531.43 L948.16,531.43 L948.16,481.75 L939.26,481.75 L939.26,531.43 Z  '/>	<path stroke='rgb(  0, 114, 178)'  d='M939.26,507.59 L948.16,507.59 M943.71,559.29 L943.71,531.43 M943.71,481.75 L943.71,435.09 M934.71,435.09 L952.71,435.09
-		M934.71,559.29 L952.71,559.29  '/></g>
-	</g>
-	<g id="gnuplot_plot_61"  fill="none"><title>gnuplot_plot_61</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(905.42,57.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text>20240404-gnome_terminal_3.50.1_f39-300x74.dat</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(229,  30,  16)' fill-opacity = '0.250000' points = '913.81,58.50 956.37,58.50 956.37,49.50 913.81,49.50 '/>
-		<polygon fill = 'rgb(229,  30,  16)' fill-opacity = '0.250000' points = '149.07,556.27 157.97,556.27 157.97,527.06 149.07,527.06 '/>
-	</g>
-	<path stroke='rgb(229,  30,  16)'  d='M149.07,556.27 L157.97,556.27 L157.97,527.06 L149.07,527.06 L149.07,556.27 Z  '/>	<path stroke='rgb(229,  30,  16)'  d='M149.07,555.93 L157.97,555.93 M153.52,556.27 M153.52,527.06 L153.52,520.69 M144.52,520.69 L162.52,520.69 M144.52,556.27
-		L162.52,556.27  '/></g>
-	</g>
-	<g id="gnuplot_plot_62"  fill="none"><title>gnuplot_plot_62</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(229,  30,  16)' fill-opacity = '0.250000' points = '237.97,453.21 246.87,453.21 246.87,429.72 237.97,429.72 '/>
-	</g>
-	<path stroke='rgb(229,  30,  16)'  d='M237.97,453.21 L246.87,453.21 L246.87,429.72 L237.97,429.72 L237.97,453.21 Z  '/>	<path stroke='rgb(229,  30,  16)'  d='M237.97,440.46 L246.87,440.46 M242.42,480.07 L242.42,453.21 M242.42,429.72 L242.42,407.23 M233.42,407.23 L251.42,407.23
-		M233.42,480.07 L251.42,480.07  '/></g>
-	</g>
-	<g id="gnuplot_plot_63"  fill="none"><title>gnuplot_plot_63</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(229,  30,  16)' fill-opacity = '0.250000' points = '326.87,559.29 335.77,559.29 335.77,559.29 326.87,559.29 '/>
-	</g>
-	<path stroke='rgb(229,  30,  16)'  d='M326.87,559.29 L335.77,559.29 L326.87,559.29 Z  '/>	<path stroke='rgb(229,  30,  16)'  d='M326.87,559.29 L335.77,559.29 M331.32,559.29 M322.32,559.29 L340.32,559.29 M322.32,559.29 L340.32,559.29  '/></g>
-	</g>
-	<g id="gnuplot_plot_64"  fill="none"><title>gnuplot_plot_64</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(229,  30,  16)' fill-opacity = '0.250000' points = '415.76,484.10 424.66,484.10 424.66,478.73 415.76,478.73 '/>
-	</g>
-	<path stroke='rgb(229,  30,  16)'  d='M415.76,484.10 L424.66,484.10 L424.66,478.73 L415.76,478.73 L415.76,484.10 Z  '/>	<path stroke='rgb(229,  30,  16)'  d='M415.76,481.24 L424.66,481.24 M420.21,488.12 L420.21,484.10 M420.21,478.73 L420.21,474.70 M411.21,474.70 L429.21,474.70
-		M411.21,488.12 L429.21,488.12  '/></g>
-	</g>
-	<g id="gnuplot_plot_65"  fill="none"><title>gnuplot_plot_65</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(229,  30,  16)' fill-opacity = '0.250000' points = '504.66,502.89 513.56,502.89 513.56,499.54 504.66,499.54 '/>
-	</g>
-	<path stroke='rgb(229,  30,  16)'  d='M504.66,502.89 L513.56,502.89 L513.56,499.54 L504.66,499.54 L504.66,502.89 Z  '/>	<path stroke='rgb(229,  30,  16)'  d='M504.66,501.22 L513.56,501.22 M509.11,506.59 L509.11,502.89 M509.11,499.54 L509.11,495.17 M500.11,495.17 L518.11,495.17
-		M500.11,506.59 L518.11,506.59  '/></g>
-	</g>
-	<g id="gnuplot_plot_66"  fill="none"><title>gnuplot_plot_66</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(229,  30,  16)' fill-opacity = '0.250000' points = '593.55,500.21 602.45,500.21 602.45,496.18 593.55,496.18 '/>
-	</g>
-	<path stroke='rgb(229,  30,  16)'  d='M593.55,500.21 L602.45,500.21 L602.45,496.18 L593.55,496.18 L593.55,500.21 Z  '/>	<path stroke='rgb(229,  30,  16)'  d='M593.55,498.87 L602.45,498.87 M598.00,503.90 L598.00,500.21 M598.00,496.18 L598.00,492.49 M589.00,492.49 L607.00,492.49
-		M589.00,503.90 L607.00,503.90  '/></g>
-	</g>
-	<g id="gnuplot_plot_67"  fill="none"><title>gnuplot_plot_67</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(229,  30,  16)' fill-opacity = '0.250000' points = '682.45,558.95 691.35,558.95 691.35,540.15 682.45,540.15 '/>
-	</g>
-	<path stroke='rgb(229,  30,  16)'  d='M682.45,558.95 L691.35,558.95 L691.35,540.15 L682.45,540.15 L682.45,558.95 Z  '/>	<path stroke='rgb(229,  30,  16)'  d='M682.45,543.85 L691.35,543.85 M686.90,558.95 M686.90,540.15 L686.90,525.72 M677.90,525.72 L695.90,525.72 M677.90,558.95
-		L695.90,558.95  '/></g>
-	</g>
-	<g id="gnuplot_plot_68"  fill="none"><title>gnuplot_plot_68</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(229,  30,  16)' fill-opacity = '0.250000' points = '771.35,488.80 780.25,488.80 780.25,480.40 771.35,480.40 '/>
-	</g>
-	<path stroke='rgb(229,  30,  16)'  d='M771.35,488.80 L780.25,488.80 L780.25,480.40 L771.35,480.40 L771.35,488.80 Z  '/>	<path stroke='rgb(229,  30,  16)'  d='M771.35,484.77 L780.25,484.77 M775.80,495.51 L775.80,488.80 M775.80,480.40 L775.80,473.69 M766.80,473.69 L784.80,473.69
-		M766.80,495.51 L784.80,495.51  '/></g>
-	</g>
-	<g id="gnuplot_plot_69"  fill="none"><title>gnuplot_plot_69</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(229,  30,  16)' fill-opacity = '0.250000' points = '860.24,496.52 869.14,496.52 869.14,492.49 860.24,492.49 '/>
-	</g>
-	<path stroke='rgb(229,  30,  16)'  d='M860.24,496.52 L869.14,496.52 L869.14,492.49 L860.24,492.49 L860.24,496.52 Z  '/>	<path stroke='rgb(229,  30,  16)'  d='M860.24,495.01 L869.14,495.01 M864.69,502.22 L864.69,496.52 M864.69,492.49 L864.69,487.79 M855.69,487.79 L873.69,487.79
-		M855.69,502.22 L873.69,502.22  '/></g>
-	</g>
-	<g id="gnuplot_plot_70"  fill="none"><title>gnuplot_plot_70</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(229,  30,  16)' fill-opacity = '0.250000' points = '949.14,558.95 958.04,558.95 958.04,521.86 949.14,521.86 '/>
-	</g>
-	<path stroke='rgb(229,  30,  16)'  d='M949.14,558.95 L958.04,558.95 L958.04,521.86 L949.14,521.86 L949.14,558.95 Z  '/>	<path stroke='rgb(229,  30,  16)'  d='M949.14,558.95 L958.04,558.95 M953.59,559.29 L953.59,558.95 M953.59,521.86 L953.59,489.80 M944.59,489.80 L962.59,489.80
-		M944.59,559.29 L962.59,559.29  '/></g>
-	</g>
-	<g id="gnuplot_plot_71"  fill="none"><title>gnuplot_plot_71</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(905.42,75.90)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
-		<text>20240404-gnome_terminal_3.50.1_f40-300x74.dat</text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0,   0,   0)' fill-opacity = '0.250000' points = '913.81,76.50 956.37,76.50 956.37,67.50 913.81,67.50 '/>
-		<polygon fill = 'rgb(  0,   0,   0)' fill-opacity = '0.250000' points = '158.95,535.79 167.85,535.79 167.85,527.40 158.95,527.40 '/>
-	</g>
-	<path stroke='rgb(  0,   0,   0)'  d='M158.95,535.79 L167.85,535.79 L167.85,527.40 L158.95,527.40 L158.95,535.79 Z  '/>	<path stroke='rgb(  0,   0,   0)'  d='M158.95,531.09 L167.85,531.09 M163.40,543.51 L163.40,535.79 M163.40,527.40 L163.40,516.32 M154.40,516.32 L172.40,516.32
-		M154.40,543.51 L172.40,543.51  '/></g>
-	</g>
-	<g id="gnuplot_plot_72"  fill="none"><title>gnuplot_plot_72</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0,   0,   0)' fill-opacity = '0.250000' points = '247.85,327.33 256.75,327.33 256.75,300.82 247.85,300.82 '/>
-	</g>
-	<path stroke='rgb(  0,   0,   0)'  d='M247.85,327.33 L256.75,327.33 L256.75,300.82 L247.85,300.82 L247.85,327.33 Z  '/>	<path stroke='rgb(  0,   0,   0)'  d='M247.85,313.57 L256.75,313.57 M252.30,354.52 L252.30,327.33 M252.30,300.82 L252.30,284.70 M243.30,284.70 L261.30,284.70
-		M243.30,354.52 L261.30,354.52  '/></g>
-	</g>
-	<g id="gnuplot_plot_73"  fill="none"><title>gnuplot_plot_73</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0,   0,   0)' fill-opacity = '0.250000' points = '336.74,559.29 345.64,559.29 345.64,555.93 336.74,555.93 '/>
-	</g>
-	<path stroke='rgb(  0,   0,   0)'  d='M336.74,559.29 L345.64,559.29 L345.64,555.93 L336.74,555.93 L336.74,559.29 Z  '/>	<path stroke='rgb(  0,   0,   0)'  d='M336.74,556.60 L345.64,556.60 M341.19,559.29 M341.19,555.93 L341.19,551.90 M332.19,551.90 L350.19,551.90 M332.19,559.29
-		L350.19,559.29  '/></g>
-	</g>
-	<g id="gnuplot_plot_74"  fill="none"><title>gnuplot_plot_74</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0,   0,   0)' fill-opacity = '0.250000' points = '425.64,496.85 434.54,496.85 434.54,494.17 425.64,494.17 '/>
-	</g>
-	<path stroke='rgb(  0,   0,   0)'  d='M425.64,496.85 L434.54,496.85 L434.54,494.17 L425.64,494.17 L425.64,496.85 Z  '/>	<path stroke='rgb(  0,   0,   0)'  d='M425.64,495.34 L434.54,495.34 M430.09,499.87 L430.09,496.85 M430.09,494.17 L430.09,490.47 M421.09,490.47 L439.09,490.47
-		M421.09,499.87 L439.09,499.87  '/></g>
-	</g>
-	<g id="gnuplot_plot_75"  fill="none"><title>gnuplot_plot_75</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0,   0,   0)' fill-opacity = '0.250000' points = '514.54,501.22 523.44,501.22 523.44,499.03 514.54,499.03 '/>
-	</g>
-	<path stroke='rgb(  0,   0,   0)'  d='M514.54,501.22 L523.44,501.22 L523.44,499.03 L514.54,499.03 L514.54,501.22 Z  '/>	<path stroke='rgb(  0,   0,   0)'  d='M514.54,500.21 L523.44,500.21 M518.99,503.57 L518.99,501.22 M518.99,499.03 L518.99,496.18 M509.99,496.18 L527.99,496.18
-		M509.99,503.57 L527.99,503.57  '/></g>
-	</g>
-	<g id="gnuplot_plot_76"  fill="none"><title>gnuplot_plot_76</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0,   0,   0)' fill-opacity = '0.250000' points = '603.43,497.52 612.33,497.52 612.33,493.50 603.43,493.50 '/>
-	</g>
-	<path stroke='rgb(  0,   0,   0)'  d='M603.43,497.52 L612.33,497.52 L612.33,493.50 L603.43,493.50 L603.43,497.52 Z  '/>	<path stroke='rgb(  0,   0,   0)'  d='M603.43,495.85 L612.33,495.85 M607.88,502.56 L607.88,497.52 M607.88,493.50 L607.88,489.47 M598.88,489.47 L616.88,489.47
-		M598.88,502.56 L616.88,502.56  '/></g>
-	</g>
-	<g id="gnuplot_plot_77"  fill="none"><title>gnuplot_plot_77</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0,   0,   0)' fill-opacity = '0.250000' points = '692.33,557.27 701.23,557.27 701.23,553.25 692.33,553.25 '/>
-	</g>
-	<path stroke='rgb(  0,   0,   0)'  d='M692.33,557.27 L701.23,557.27 L701.23,553.25 L692.33,553.25 L692.33,557.27 Z  '/>	<path stroke='rgb(  0,   0,   0)'  d='M692.33,554.59 L701.23,554.59 M696.78,558.95 L696.78,557.27 M696.78,553.25 L696.78,548.21 M687.78,548.21 L705.78,548.21
-		M687.78,558.95 L705.78,558.95  '/></g>
-	</g>
-	<g id="gnuplot_plot_78"  fill="none"><title>gnuplot_plot_78</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0,   0,   0)' fill-opacity = '0.250000' points = '781.22,487.45 790.12,487.45 790.12,484.77 781.22,484.77 '/>
-	</g>
-	<path stroke='rgb(  0,   0,   0)'  d='M781.22,487.45 L790.12,487.45 L790.12,484.77 L781.22,484.77 L781.22,487.45 Z  '/>	<path stroke='rgb(  0,   0,   0)'  d='M781.22,486.11 L790.12,486.11 M785.67,489.47 L785.67,487.45 M785.67,484.77 L785.67,480.74 M776.67,480.74 L794.67,480.74
-		M776.67,489.47 L794.67,489.47  '/></g>
-	</g>
-	<g id="gnuplot_plot_79"  fill="none"><title>gnuplot_plot_79</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0,   0,   0)' fill-opacity = '0.250000' points = '870.12,496.18 879.02,496.18 879.02,493.66 870.12,493.66 '/>
-	</g>
-	<path stroke='rgb(  0,   0,   0)'  d='M870.12,496.18 L879.02,496.18 L879.02,493.66 L870.12,493.66 L870.12,496.18 Z  '/>	<path stroke='rgb(  0,   0,   0)'  d='M870.12,495.17 L879.02,495.17 M874.57,498.53 L874.57,496.18 M874.57,493.66 L874.57,490.47 M865.57,490.47 L883.57,490.47
-		M865.57,498.53 L883.57,498.53  '/></g>
-	</g>
-	<g id="gnuplot_plot_80"  fill="none"><title>gnuplot_plot_80</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0,   0,   0)' fill-opacity = '0.250000' points = '959.02,511.45 967.92,511.45 967.92,420.82 959.02,420.82 '/>
-	</g>
-	<path stroke='rgb(  0,   0,   0)'  d='M959.02,511.45 L967.92,511.45 L967.92,420.82 L959.02,420.82 L959.02,511.45 Z  '/>	<path stroke='rgb(  0,   0,   0)'  d='M959.02,466.64 L967.92,466.64 M963.47,559.29 L963.47,511.45 M963.47,420.82 L963.47,354.52 M954.47,354.52 L972.47,354.52
-		M954.47,559.29 L972.47,559.29  '/></g>
-	</g>
-<g fill="none" color="#FFFFFF" stroke="rgb(  0,   0,   0)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="black" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M80.92,90.01 L80.92,559.96 L974.82,559.96 L974.82,90.01 L80.92,90.01 Z  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1000"
+   height="750"
+   viewBox="0 0 1000 750"
+   version="1.1"
+   id="svg231"
+   sodipodi:docname="vtebench-full.svg"
+   inkscape:export-filename="vtebench-full.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs231">
+    <defs
+       id="defs2">
+      <circle
+         id="gpDot"
+         r="0.5"
+         stroke-width="0.5"
+         stroke="currentColor" />
+      <path
+         id="gpPt0"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M-1,0 h2 M0,-1 v2" />
+      <path
+         id="gpPt1"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M-1,-1 L1,1 M1,-1 L-1,1" />
+      <path
+         id="gpPt2"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1" />
+      <rect
+         id="gpPt3"
+         stroke-width="0.222"
+         stroke="currentColor"
+         x="-1"
+         y="-1"
+         width="2"
+         height="2" />
+      <rect
+         id="gpPt4"
+         stroke-width="0.222"
+         stroke="currentColor"
+         fill="currentColor"
+         x="-1"
+         y="-1"
+         width="2"
+         height="2" />
+      <circle
+         id="gpPt5"
+         stroke-width="0.222"
+         stroke="currentColor"
+         cx="0"
+         cy="0"
+         r="1" />
+      <use
+         xlink:href="#gpPt5"
+         id="gpPt6"
+         fill="currentColor"
+         stroke="none" />
+      <path
+         id="gpPt7"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M0,-1.33 L-1.33,0.67 L1.33,0.67 z" />
+      <use
+         xlink:href="#gpPt7"
+         id="gpPt8"
+         fill="currentColor"
+         stroke="none" />
+      <use
+         xlink:href="#gpPt7"
+         id="gpPt9"
+         stroke="currentColor"
+         transform="rotate(180)" />
+      <use
+         xlink:href="#gpPt9"
+         id="gpPt10"
+         fill="currentColor"
+         stroke="none" />
+      <use
+         xlink:href="#gpPt3"
+         id="gpPt11"
+         stroke="currentColor"
+         transform="rotate(45)" />
+      <use
+         xlink:href="#gpPt11"
+         id="gpPt12"
+         fill="currentColor"
+         stroke="none" />
+      <path
+         id="gpPt13"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M0,1.330 L1.265,0.411 L0.782,-1.067 L-0.782,-1.076 L-1.265,0.411 z" />
+      <use
+         xlink:href="#gpPt13"
+         id="gpPt14"
+         fill="currentColor"
+         stroke="none" />
+      <filter
+         id="textbox"
+         filterUnits="objectBoundingBox"
+         x="0"
+         y="0"
+         height="1"
+         width="1">
+        <feFlood
+           flood-color="#FFFFFF"
+           flood-opacity="1"
+           result="bgnd"
+           id="feFlood1" />
+        <feComposite
+           in="SourceGraphic"
+           in2="bgnd"
+           operator="atop"
+           id="feComposite1" />
+      </filter>
+      <filter
+         id="greybox"
+         filterUnits="objectBoundingBox"
+         x="0"
+         y="0"
+         height="1"
+         width="1">
+        <feFlood
+           flood-color="lightgrey"
+           flood-opacity="1"
+           result="grey"
+           id="feFlood2" />
+        <feComposite
+           in="SourceGraphic"
+           in2="grey"
+           operator="atop"
+           id="feComposite2" />
+      </filter>
+    </defs>
+  </defs>
+  <sodipodi:namedview
+     id="namedview231"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.54305801"
+     inkscape:cx="188.74595"
+     inkscape:cy="444.70387"
+     inkscape:window-width="2552"
+     inkscape:window-height="1359"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg231" />
+  <title
+     id="title1">Gnuplot</title>
+  <desc
+     id="desc1">Produced by GNUPLOT 5.4 patchlevel 9 </desc>
+  <g
+     fill="none"
+     color="#ffffff"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g2" />
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g4">
+    <path
+       stroke="#000000"
+       d="m 80.92,559.96 h 9 m 884.9,0 h -9"
+       id="path2" />
+    <g
+       transform="translate(72.53,563.86)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="end"
+       id="g3">
+      <text
+         id="text2">0</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g6">
+    <path
+       stroke="#000000"
+       d="m 80.92,492.82 h 9 m 884.9,0 h -9"
+       id="path4" />
+    <g
+       transform="translate(72.53,496.72)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="end"
+       id="g5">
+      <text
+         id="text4">200</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g8">
+    <path
+       stroke="#000000"
+       d="m 80.92,425.69 h 9 m 884.9,0 h -9"
+       id="path6" />
+    <g
+       transform="translate(72.53,429.59)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="end"
+       id="g7">
+      <text
+         id="text6">400</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g10">
+    <path
+       stroke="#000000"
+       d="m 80.92,358.55 h 9 m 884.9,0 h -9"
+       id="path8" />
+    <g
+       transform="translate(72.53,362.45)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="end"
+       id="g9">
+      <text
+         id="text8">600</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g12">
+    <path
+       stroke="#000000"
+       d="m 80.92,291.42 h 9 m 884.9,0 h -9"
+       id="path10" />
+    <g
+       transform="translate(72.53,295.32)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="end"
+       id="g11">
+      <text
+         id="text10">800</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g14">
+    <path
+       stroke="#000000"
+       d="m 80.92,224.28 h 9 m 884.9,0 h -9"
+       id="path12" />
+    <g
+       transform="translate(72.53,228.18)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="end"
+       id="g13">
+      <text
+         id="text12">1000</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g16">
+    <path
+       stroke="#000000"
+       d="m 80.92,157.15 h 9 m 884.9,0 h -9"
+       id="path14" />
+    <g
+       transform="translate(72.53,161.05)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="end"
+       id="g15">
+      <text
+         id="text14">1200</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g18">
+    <path
+       stroke="#000000"
+       d="m 80.92,90.01 h 9 m 884.9,0 h -9"
+       id="path16" />
+    <g
+       transform="translate(72.53,93.91)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="end"
+       id="g17">
+      <text
+         id="text16">1400</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g20">
+    <path
+       stroke="#000000"
+       d="m 114.01,559.96 m 0,-469.95"
+       id="path18" />
+    <g
+       transform="rotate(45,-633.76575,419.84563)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="start"
+       id="g19">
+      <text
+         id="text18">cursor_motion</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g22">
+    <path
+       stroke="#000000"
+       d="m 202.91,559.96 m 0,-469.95"
+       id="path20" />
+    <g
+       transform="rotate(45,-589.31575,527.15742)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="start"
+       id="g21">
+      <text
+         id="text20">dense_cells</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g24">
+    <path
+       stroke="#000000"
+       d="m 291.8,559.96 m 0,-469.95"
+       id="path22" />
+    <g
+       transform="rotate(45,-544.87075,634.45714)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="start"
+       id="g23">
+      <text
+         id="text22">light_cells</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g26">
+    <path
+       stroke="#000000"
+       d="m 380.7,559.96 m 0,-469.95"
+       id="path24" />
+    <g
+       transform="rotate(45,-500.42075,741.76894)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="start"
+       id="g25">
+      <text
+         id="text24">scrolling</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g28">
+    <path
+       stroke="#000000"
+       d="m 469.59,559.96 m 0,-469.95"
+       id="path26" />
+    <g
+       transform="rotate(45,-455.97575,849.06866)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="start"
+       id="g27">
+      <text
+         id="text26">scrolling_bottom_region</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g30">
+    <path
+       stroke="#000000"
+       d="m 558.49,559.96 m 0,-469.95"
+       id="path28" />
+    <g
+       transform="rotate(45,-411.52575,956.38045)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="start"
+       id="g29">
+      <text
+         id="text28">scrolling_bottom_small_region</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g32">
+    <path
+       stroke="#000000"
+       d="m 647.39,559.96 m 0,-469.95"
+       id="path30" />
+    <g
+       transform="rotate(45,-367.07575,1063.6922)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="start"
+       id="g31">
+      <text
+         id="text30">scrolling_fullscreen</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g34">
+    <path
+       stroke="#000000"
+       d="m 736.28,559.96 m 0,-469.95"
+       id="path32" />
+    <g
+       transform="rotate(45,-322.63075,1170.992)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="start"
+       id="g33">
+      <text
+         id="text32">scrolling_top_region</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g36">
+    <path
+       stroke="#000000"
+       d="m 825.18,559.96 m 0,-469.95"
+       id="path34" />
+    <g
+       transform="rotate(45,-278.18075,1278.3038)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="start"
+       id="g35">
+      <text
+         id="text34">scrolling_top_small_region</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g38">
+    <path
+       stroke="#000000"
+       d="m 914.07,559.96 m 0,-469.95"
+       id="path36" />
+    <g
+       transform="rotate(45,-233.73575,1385.6035)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="start"
+       id="g37">
+      <text
+         id="text36">unicode</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g39" />
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g40">
+    <path
+       stroke="#000000"
+       d="m 80.92,90.01 v 469.95 h 893.9 V 90.01 Z"
+       id="path39" />
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g41">
+    <path
+       stroke="#888888"
+       stroke-dasharray="1, 2.5"
+       d="M 173.28,559.95 V 90"
+       id="path40" />
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g42">
+    <path
+       stroke="#888888"
+       stroke-dasharray="1, 2.5"
+       d="M 262.18,559.95 V 90"
+       id="path41" />
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g43">
+    <path
+       stroke="#888888"
+       stroke-dasharray="1, 2.5"
+       d="M 351.08,559.95 V 90"
+       id="path42" />
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g44">
+    <path
+       stroke="#888888"
+       stroke-dasharray="1, 2.5"
+       d="M 439.97,559.95 V 90"
+       id="path43" />
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g45">
+    <path
+       stroke="#888888"
+       stroke-dasharray="1, 2.5"
+       d="M 528.87,559.95 V 90"
+       id="path44" />
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g46">
+    <path
+       stroke="#888888"
+       stroke-dasharray="1, 2.5"
+       d="M 617.76,559.95 V 90"
+       id="path45" />
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g47">
+    <path
+       stroke="#888888"
+       stroke-dasharray="1, 2.5"
+       d="M 706.66,559.95 V 90"
+       id="path46" />
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g48">
+    <path
+       stroke="#888888"
+       stroke-dasharray="1, 2.5"
+       d="M 795.56,559.95 V 90"
+       id="path47" />
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g49">
+    <path
+       stroke="#888888"
+       stroke-dasharray="1, 2.5"
+       d="M 884.45,559.95 V 90"
+       id="path48" />
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g51">
+    <g
+       transform="rotate(-90,172.085,152.905)"
+       stroke="none"
+       fill="#000000"
+       font-family="Arial"
+       font-size="12px"
+       text-anchor="middle"
+       id="g50">
+      <text
+         id="text49">milliseconds (lower is better)</text>
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g52" />
+  <g
+     id="gnuplot_plot_1"
+     fill="none">
+    <title
+       id="title52">gnuplot_plot_1</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g54">
+      <g
+         transform="translate(468.53,21.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g53">
+        <text
+           id="text52">20240404-alacritty_0.13.2_f39-300x74.dat</text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g56">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g55">
+        <polygon
+           fill="#9400d3"
+           fill-opacity="0.25"
+           points="519.48,13.5 476.92,13.5 476.92,22.5 519.48,22.5 "
+           id="polygon54" />
+        <polygon
+           fill="#9400d3"
+           fill-opacity="0.25"
+           points="98.71,544.18 89.81,544.18 89.81,545.53 98.71,545.53 "
+           id="polygon55" />
+      </g>
+      <path
+         stroke="#9400d3"
+         d="m 89.81,545.53 h 8.9 v -1.35 h -8.9 z"
+         id="path55" />
+      <path
+         stroke="#9400d3"
+         d="m 89.81,544.52 h 8.9 m -4.45,1.68 v -0.67 m 0,-1.35 v -1.68 m -9,0 h 18 m -18,3.7 h 18"
+         id="path56" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_2"
+     fill="none">
+    <title
+       id="title56">gnuplot_plot_2</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g58">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g57">
+        <polygon
+           fill="#9400d3"
+           fill-opacity="0.25"
+           points="187.61,507.26 178.71,507.26 178.71,508.94 187.61,508.94 "
+           id="polygon56" />
+      </g>
+      <path
+         stroke="#9400d3"
+         d="m 178.71,508.94 h 8.9 v -1.68 h -8.9 z"
+         id="path57" />
+      <path
+         stroke="#9400d3"
+         d="m 178.71,508.6 h 8.9 m -4.45,2.69 v -2.35 m 0,-1.68 v -2.35 m -9,0 h 18 m -18,6.38 h 18"
+         id="path58" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_3"
+     fill="none">
+    <title
+       id="title58">gnuplot_plot_3</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g60">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g59">
+        <polygon
+           fill="#9400d3"
+           fill-opacity="0.25"
+           points="276.5,555.26 267.6,555.26 267.6,555.6 276.5,555.6 "
+           id="polygon58" />
+      </g>
+      <path
+         stroke="#9400d3"
+         d="m 267.6,555.6 h 8.9 v -0.34 h -8.9 z"
+         id="path59" />
+      <path
+         stroke="#9400d3"
+         d="m 267.6,555.26 h 8.9 m -4.45,0.67 v -0.33 m 0,-0.34 v -0.34 m -9,0 h 18 m -18,1.01 h 18"
+         id="path60" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_4"
+     fill="none">
+    <title
+       id="title60">gnuplot_plot_4</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g62">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g61">
+        <polygon
+           fill="#9400d3"
+           fill-opacity="0.25"
+           points="365.4,515.31 356.5,515.31 356.5,516.99 365.4,516.99 "
+           id="polygon60" />
+      </g>
+      <path
+         stroke="#9400d3"
+         d="m 356.5,516.99 h 8.9 v -1.68 h -8.9 z"
+         id="path61" />
+      <path
+         stroke="#9400d3"
+         d="m 356.5,516.15 h 8.9 m -4.45,1.85 v -1.01 m 0,-1.68 v -1.67 m -9,0 h 18 m -18,4.36 h 18"
+         id="path62" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_5"
+     fill="none">
+    <title
+       id="title62">gnuplot_plot_5</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g64">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g63">
+        <polygon
+           fill="#9400d3"
+           fill-opacity="0.25"
+           points="454.29,515.65 445.39,515.65 445.39,516.66 454.29,516.66 "
+           id="polygon62" />
+      </g>
+      <path
+         stroke="#9400d3"
+         d="m 445.39,516.66 h 8.9 v -1.01 h -8.9 z"
+         id="path63" />
+      <path
+         stroke="#9400d3"
+         d="m 445.39,515.99 h 8.9 m -4.45,2.01 v -1.34 m 0,-1.01 v -1.01 m -9,0 h 18 m -18,3.36 h 18"
+         id="path64" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_6"
+     fill="none">
+    <title
+       id="title64">gnuplot_plot_6</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g66">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g65">
+        <polygon
+           fill="#9400d3"
+           fill-opacity="0.25"
+           points="543.19,515.99 534.29,515.99 534.29,516.99 543.19,516.99 "
+           id="polygon64" />
+      </g>
+      <path
+         stroke="#9400d3"
+         d="m 534.29,516.99 h 8.9 v -1 h -8.9 z"
+         id="path65" />
+      <path
+         stroke="#9400d3"
+         d="m 534.29,516.66 h 8.9 m -4.45,1.34 v -1.01 m 0,-1 v -0.68 m -9,0 h 18 m -18,2.69 h 18"
+         id="path66" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_7"
+     fill="none">
+    <title
+       id="title66">gnuplot_plot_7</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g68">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g67">
+        <polygon
+           fill="#9400d3"
+           fill-opacity="0.25"
+           points="632.09,555.6 623.19,555.6 623.19,556.27 632.09,556.27 "
+           id="polygon66" />
+      </g>
+      <path
+         stroke="#9400d3"
+         d="m 623.19,556.27 h 8.9 v -0.67 h -8.9 z"
+         id="path67" />
+      <path
+         stroke="#9400d3"
+         d="m 623.19,555.93 h 8.9 m -4.45,1.34 v -1 m 0,-0.67 v -0.34 m -9,0 h 18 m -18,2.01 h 18"
+         id="path68" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_8"
+     fill="none">
+    <title
+       id="title68">gnuplot_plot_8</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g70">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g69">
+        <polygon
+           fill="#9400d3"
+           fill-opacity="0.25"
+           points="720.98,515.65 712.08,515.65 712.08,516.99 720.98,516.99 "
+           id="polygon68" />
+      </g>
+      <path
+         stroke="#9400d3"
+         d="m 712.08,516.99 h 8.9 v -1.34 h -8.9 z"
+         id="path69" />
+      <path
+         stroke="#9400d3"
+         d="m 712.08,516.32 h 8.9 m -4.45,1.68 v -1.01 m 0,-1.34 v -2.01 m -9,0 h 18 m -18,4.36 h 18"
+         id="path70" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_9"
+     fill="none">
+    <title
+       id="title70">gnuplot_plot_9</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g72">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g71">
+        <polygon
+           fill="#9400d3"
+           fill-opacity="0.25"
+           points="809.88,514.98 800.98,514.98 800.98,515.99 809.88,515.99 "
+           id="polygon70" />
+      </g>
+      <path
+         stroke="#9400d3"
+         d="m 800.98,515.99 h 8.9 v -1.01 h -8.9 z"
+         id="path71" />
+      <path
+         stroke="#9400d3"
+         d="m 800.98,515.31 h 8.9 m -4.45,2.02 v -1.34 m 0,-1.01 v -0.67 m -9,0 h 18 m -18,3.02 h 18"
+         id="path72" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_10"
+     fill="none">
+    <title
+       id="title72">gnuplot_plot_10</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g74">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g73">
+        <polygon
+           fill="#9400d3"
+           fill-opacity="0.25"
+           points="898.77,555.6 889.87,555.6 889.87,556.27 898.77,556.27 "
+           id="polygon72" />
+      </g>
+      <path
+         stroke="#9400d3"
+         d="m 889.87,556.27 h 8.9 v -0.67 h -8.9 z"
+         id="path73" />
+      <path
+         stroke="#9400d3"
+         d="m 889.87,555.93 h 8.9 m -4.45,1.34 v -1 m 0,-0.67 v -0.68 m -9,0 h 18 m -18,2.35 h 18"
+         id="path74" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_11"
+     fill="none">
+    <title
+       id="title74">gnuplot_plot_11</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g76">
+      <g
+         transform="translate(468.53,39.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g75">
+        <text
+           id="text74">20240404-alacritty_0.13.2_f40-300x74.dat</text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g78">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g77">
+        <polygon
+           fill="#009e73"
+           fill-opacity="0.25"
+           points="519.48,31.5 476.92,31.5 476.92,40.5 519.48,40.5 "
+           id="polygon76" />
+        <polygon
+           fill="#009e73"
+           fill-opacity="0.25"
+           points="108.59,544.18 99.69,544.18 99.69,545.53 108.59,545.53 "
+           id="polygon77" />
+      </g>
+      <path
+         stroke="#009e73"
+         d="m 99.69,545.53 h 8.9 v -1.35 h -8.9 z"
+         id="path77" />
+      <path
+         stroke="#009e73"
+         d="m 99.69,544.52 h 8.9 m -4.45,1.34 v -0.33 m 0,-1.35 v -1.34 m -9,0 h 18 m -18,3.02 h 18"
+         id="path78" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_12"
+     fill="none">
+    <title
+       id="title78">gnuplot_plot_12</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g80">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g79">
+        <polygon
+           fill="#009e73"
+           fill-opacity="0.25"
+           points="197.48,506.92 188.58,506.92 188.58,508.94 197.48,508.94 "
+           id="polygon78" />
+      </g>
+      <path
+         stroke="#009e73"
+         d="m 188.58,508.94 h 8.9 v -2.02 h -8.9 z"
+         id="path79" />
+      <path
+         stroke="#009e73"
+         d="m 188.58,507.93 h 8.9 m -4.45,2.69 v -1.68 m 0,-2.02 v -2.68 m -9,0 h 18 m -18,6.38 h 18"
+         id="path80" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_13"
+     fill="none">
+    <title
+       id="title80">gnuplot_plot_13</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g82">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g81">
+        <polygon
+           fill="#009e73"
+           fill-opacity="0.25"
+           points="286.38,555.26 277.48,555.26 277.48,555.6 286.38,555.6 "
+           id="polygon80" />
+      </g>
+      <path
+         stroke="#009e73"
+         d="m 277.48,555.6 h 8.9 v -0.34 h -8.9 z"
+         id="path81" />
+      <path
+         stroke="#009e73"
+         d="m 277.48,555.6 h 8.9 m -4.45,0.33 v -0.33 m 0,-0.34 v -0.34 m -9,0 h 18 m -18,1.01 h 18"
+         id="path82" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_14"
+     fill="none">
+    <title
+       id="title82">gnuplot_plot_14</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g84">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g83">
+        <polygon
+           fill="#009e73"
+           fill-opacity="0.25"
+           points="375.26,515.65 366.38,515.65 366.38,516.32 375.26,516.32 "
+           id="polygon82" />
+      </g>
+      <path
+         stroke="#009e73"
+         d="m 366.38,516.32 h 8.88 v -0.67 h -8.88 z"
+         id="path83" />
+      <path
+         stroke="#009e73"
+         d="m 366.38,515.99 h 8.88 m -4.44,1.34 v -1.01 m 0,-0.67 v -0.67 m -9,0 h 18 m -18,2.35 h 18"
+         id="path84" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_15"
+     fill="none">
+    <title
+       id="title84">gnuplot_plot_15</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g86">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g85">
+        <polygon
+           fill="#009e73"
+           fill-opacity="0.25"
+           points="464.17,515.99 455.27,515.99 455.27,516.66 464.17,516.66 "
+           id="polygon84" />
+      </g>
+      <path
+         stroke="#009e73"
+         d="m 455.27,516.66 h 8.9 v -0.67 h -8.9 z"
+         id="path85" />
+      <path
+         stroke="#009e73"
+         d="m 455.27,516.32 h 8.9 m -4.45,0.67 v -0.33 m 0,-0.67 v -1.01 m -9,0 h 18 m -18,2.01 h 18"
+         id="path86" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_16"
+     fill="none">
+    <title
+       id="title86">gnuplot_plot_16</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g88">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g87">
+        <polygon
+           fill="#009e73"
+           fill-opacity="0.25"
+           points="553.07,516.66 544.17,516.66 544.17,516.99 553.07,516.99 "
+           id="polygon86" />
+      </g>
+      <path
+         stroke="#009e73"
+         d="m 544.17,516.99 h 8.9 v -0.33 h -8.9 z"
+         id="path87" />
+      <path
+         stroke="#009e73"
+         d="m 544.17,516.99 h 8.9 m -4.45,0.34 v -0.34 m 0,-0.33 v -0.34 m -9,0 h 18 m -18,1.01 h 18"
+         id="path88" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_17"
+     fill="none">
+    <title
+       id="title88">gnuplot_plot_17</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g90">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g89">
+        <polygon
+           fill="#009e73"
+           fill-opacity="0.25"
+           points="641.96,555.6 633.06,555.6 633.06,556.27 641.96,556.27 "
+           id="polygon88" />
+      </g>
+      <path
+         stroke="#009e73"
+         d="m 633.06,556.27 h 8.9 v -0.67 h -8.9 z"
+         id="path89" />
+      <path
+         stroke="#009e73"
+         d="m 633.06,555.93 h 8.9 m -4.45,1.34 v -1 m 0,-0.67 v -0.68 m -9,0 h 18 m -18,2.35 h 18"
+         id="path90" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_18"
+     fill="none">
+    <title
+       id="title90">gnuplot_plot_18</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g92">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g91">
+        <polygon
+           fill="#009e73"
+           fill-opacity="0.25"
+           points="730.86,515.99 721.96,515.99 721.96,516.66 730.86,516.66 "
+           id="polygon90" />
+      </g>
+      <path
+         stroke="#009e73"
+         d="m 721.96,516.66 h 8.9 v -0.67 h -8.9 z"
+         id="path91" />
+      <path
+         stroke="#009e73"
+         d="m 721.96,516.32 h 8.9 m -4.45,1.01 v -0.67 m 0,-0.67 v -1.01 m -9,0 h 18 m -18,2.35 h 18"
+         id="path92" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_19"
+     fill="none">
+    <title
+       id="title92">gnuplot_plot_19</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g94">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g93">
+        <polygon
+           fill="#009e73"
+           fill-opacity="0.25"
+           points="819.76,515.99 810.86,515.99 810.86,516.66 819.76,516.66 "
+           id="polygon92" />
+      </g>
+      <path
+         stroke="#009e73"
+         d="m 810.86,516.66 h 8.9 v -0.67 h -8.9 z"
+         id="path93" />
+      <path
+         stroke="#009e73"
+         d="m 810.86,516.32 h 8.9 m -4.45,1.34 v -1 m 0,-0.67 v -1.01 m -9,0 h 18 m -18,2.68 h 18"
+         id="path94" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_20"
+     fill="none">
+    <title
+       id="title94">gnuplot_plot_20</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g96">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g95">
+        <polygon
+           fill="#009e73"
+           fill-opacity="0.25"
+           points="908.65,555.6 899.75,555.6 899.75,556.27 908.65,556.27 "
+           id="polygon94" />
+      </g>
+      <path
+         stroke="#009e73"
+         d="m 899.75,556.27 h 8.9 v -0.67 h -8.9 z"
+         id="path95" />
+      <path
+         stroke="#009e73"
+         d="m 899.75,555.93 h 8.9 m -4.45,1.34 v -1 m 0,-0.67 v -1.01 m -9,0 h 18 m -18,2.68 h 18"
+         id="path96" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_21"
+     fill="none">
+    <title
+       id="title96">gnuplot_plot_21</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g98">
+      <g
+         transform="translate(468.53,57.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g97">
+        <text
+           id="text96">20240404-kgx_45_f39-300x74.dat</text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g100">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g99">
+        <polygon
+           fill="#56b4e9"
+           fill-opacity="0.25"
+           points="519.48,49.5 476.92,49.5 476.92,58.5 519.48,58.5 "
+           id="polygon98" />
+        <polygon
+           fill="#56b4e9"
+           fill-opacity="0.25"
+           points="118.46,534.78 109.56,534.78 109.56,537.47 118.46,537.47 "
+           id="polygon99" />
+      </g>
+      <path
+         stroke="#56b4e9"
+         d="m 109.56,537.47 h 8.9 v -2.69 h -8.9 z"
+         id="path99" />
+      <path
+         stroke="#56b4e9"
+         d="m 109.56,537.13 h 8.9 m -4.45,1.68 v -1.34 m 0,-2.69 v -4.02 m -9,0 h 18 m -18,8.05 h 18"
+         id="path100" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_22"
+     fill="none">
+    <title
+       id="title100">gnuplot_plot_22</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g101" />
+  </g>
+  <g
+     id="gnuplot_plot_23"
+     fill="none">
+    <title
+       id="title101">gnuplot_plot_23</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g103">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g102">
+        <polygon
+           fill="#56b4e9"
+           fill-opacity="0.25"
+           points="296.26,558.95 287.36,558.95 287.36,559.29 296.26,559.29 "
+           id="polygon101" />
+      </g>
+      <path
+         stroke="#56b4e9"
+         d="m 287.36,559.29 h 8.9 v -0.34 h -8.9 z"
+         id="path102" />
+      <path
+         stroke="#56b4e9"
+         d="m 287.36,558.95 h 8.9 m -4.45,0.34 m 0,-0.34 m -9,0 h 18 m -18,0.34 h 18"
+         id="path103" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_24"
+     fill="none">
+    <title
+       id="title103">gnuplot_plot_24</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g105">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g104">
+        <polygon
+           fill="#56b4e9"
+           fill-opacity="0.25"
+           points="385.15,461.61 376.25,461.61 376.25,467.31 385.15,467.31 "
+           id="polygon103" />
+      </g>
+      <path
+         stroke="#56b4e9"
+         d="m 376.25,467.31 h 8.9 v -5.7 h -8.9 z"
+         id="path104" />
+      <path
+         stroke="#56b4e9"
+         d="m 376.25,465.3 h 8.9 m -4.45,10.07 v -8.06 m 0,-5.7 v -7.39 m -9,0 h 18 m -18,21.15 h 18"
+         id="path105" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_25"
+     fill="none">
+    <title
+       id="title105">gnuplot_plot_25</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g107">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g106">
+        <polygon
+           fill="#56b4e9"
+           fill-opacity="0.25"
+           points="474.05,481.41 465.15,481.41 465.15,486.45 474.05,486.45 "
+           id="polygon105" />
+      </g>
+      <path
+         stroke="#56b4e9"
+         d="m 465.15,486.45 h 8.9 v -5.04 h -8.9 z"
+         id="path106" />
+      <path
+         stroke="#56b4e9"
+         d="m 465.15,484.1 h 8.9 m -4.45,9.4 v -7.05 m 0,-5.04 v -4.03 m -9,0 h 18 m -18,16.12 h 18"
+         id="path107" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_26"
+     fill="none">
+    <title
+       id="title107">gnuplot_plot_26</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g109">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g108">
+        <polygon
+           fill="#56b4e9"
+           fill-opacity="0.25"
+           points="562.94,478.05 554.04,478.05 554.04,483.76 562.94,483.76 "
+           id="polygon107" />
+      </g>
+      <path
+         stroke="#56b4e9"
+         d="m 554.04,483.76 h 8.9 v -5.71 h -8.9 z"
+         id="path108" />
+      <path
+         stroke="#56b4e9"
+         d="m 554.04,481.08 h 8.9 m -4.45,11.07 v -8.39 m 0,-5.71 v -6.71 m -9,0 h 18 m -18,20.81 h 18"
+         id="path109" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_27"
+     fill="none">
+    <title
+       id="title109">gnuplot_plot_27</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g111">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g110">
+        <polygon
+           fill="#56b4e9"
+           fill-opacity="0.25"
+           points="651.84,538.14 642.94,538.14 642.94,558.95 651.84,558.95 "
+           id="polygon109" />
+      </g>
+      <path
+         stroke="#56b4e9"
+         d="m 642.94,558.95 h 8.9 v -20.81 h -8.9 z"
+         id="path110" />
+      <path
+         stroke="#56b4e9"
+         d="m 642.94,546.53 h 8.9 m -4.45,12.42 m 0,-20.81 v -8.06 m -9,0 h 18 m -18,28.87 h 18"
+         id="path111" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_28"
+     fill="none">
+    <title
+       id="title111">gnuplot_plot_28</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g113">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g112">
+        <polygon
+           fill="#56b4e9"
+           fill-opacity="0.25"
+           points="740.74,464.96 731.84,464.96 731.84,478.39 740.74,478.39 "
+           id="polygon111" />
+      </g>
+      <path
+         stroke="#56b4e9"
+         d="m 731.84,478.39 h 8.9 v -13.43 h -8.9 z"
+         id="path112" />
+      <path
+         stroke="#56b4e9"
+         d="m 731.84,471.84 h 8.9 m -4.45,9.57 v -3.02 m 0,-13.43 v -10.07 m -9,0 h 18 m -18,26.52 h 18"
+         id="path113" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_29"
+     fill="none">
+    <title
+       id="title113">gnuplot_plot_29</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g115">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g114">
+        <polygon
+           fill="#56b4e9"
+           fill-opacity="0.25"
+           points="829.63,479.06 820.73,479.06 820.73,487.96 829.63,487.96 "
+           id="polygon113" />
+      </g>
+      <path
+         stroke="#56b4e9"
+         d="m 820.73,487.96 h 8.9 v -8.9 h -8.9 z"
+         id="path114" />
+      <path
+         stroke="#56b4e9"
+         d="m 820.73,482.42 h 8.9 m -4.45,10.07 v -4.53 m 0,-8.9 v -7.38 m -9,0 h 18 m -18,20.81 h 18"
+         id="path115" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_30"
+     fill="none">
+    <title
+       id="title115">gnuplot_plot_30</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g117">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g116">
+        <polygon
+           fill="#56b4e9"
+           fill-opacity="0.25"
+           points="918.53,314.91 909.63,314.91 909.63,550.56 918.53,550.56 "
+           id="polygon115" />
+      </g>
+      <path
+         stroke="#56b4e9"
+         d="m 909.63,550.56 h 8.9 V 314.91 h -8.9 z"
+         id="path116" />
+      <path
+         stroke="#56b4e9"
+         d="m 909.63,415.28 h 8.9 m -4.45,144.01 v -8.73 m 0,-235.65 v -85.26 m -9,0 h 18 m -18,329.64 h 18"
+         id="path117" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_31"
+     fill="none">
+    <title
+       id="title117">gnuplot_plot_31</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g119">
+      <g
+         transform="translate(468.53,75.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g118">
+        <text
+           id="text117">20240404-kgx_46_f40-300x74.dat</text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g121">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g120">
+        <polygon
+           fill="#e69f00"
+           fill-opacity="0.25"
+           points="519.48,67.5 476.92,67.5 476.92,76.5 519.48,76.5 "
+           id="polygon119" />
+        <polygon
+           fill="#e69f00"
+           fill-opacity="0.25"
+           points="128.34,536.13 119.44,536.13 119.44,540.49 128.34,540.49 "
+           id="polygon120" />
+      </g>
+      <path
+         stroke="#e69f00"
+         d="m 119.44,540.49 h 8.9 v -4.36 h -8.9 z"
+         id="path120" />
+      <path
+         stroke="#e69f00"
+         d="m 119.44,538.14 h 8.9 m -4.45,8.06 v -5.71 m 0,-4.36 v -6.38 m -9,0 h 18 m -18,16.45 h 18"
+         id="path121" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_32"
+     fill="none">
+    <title
+       id="title121">gnuplot_plot_32</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g123">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g122">
+        <polygon
+           fill="#e69f00"
+           fill-opacity="0.25"
+           points="217.24,339.08 208.34,339.08 208.34,437.1 217.24,437.1 "
+           id="polygon121" />
+      </g>
+      <path
+         stroke="#e69f00"
+         d="m 208.34,437.1 h 8.9 v -98.02 h -8.9 z"
+         id="path122" />
+      <path
+         stroke="#e69f00"
+         d="m 208.34,382.05 h 8.9 m -4.45,94.33 V 437.1 m 0,-98.02 v -55.72 m -9,0 h 18 m -18,193.02 h 18"
+         id="path123" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_33"
+     fill="none">
+    <title
+       id="title123">gnuplot_plot_33</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g125">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g124">
+        <polygon
+           fill="#e69f00"
+           fill-opacity="0.25"
+           points="306.13,557.61 297.23,557.61 297.23,559.29 306.13,559.29 "
+           id="polygon123" />
+      </g>
+      <path
+         stroke="#e69f00"
+         d="m 297.23,559.29 h 8.9 v -1.68 h -8.9 z"
+         id="path124" />
+      <path
+         stroke="#e69f00"
+         d="m 297.23,557.95 h 8.9 m -4.45,1.34 m 0,-1.68 v -2.35 m -9,0 h 18 m -18,4.03 h 18"
+         id="path125" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_34"
+     fill="none">
+    <title
+       id="title125">gnuplot_plot_34</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g127">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g126">
+        <polygon
+           fill="#e69f00"
+           fill-opacity="0.25"
+           points="395.03,499.87 386.13,499.87 386.13,503.23 395.03,503.23 "
+           id="polygon125" />
+      </g>
+      <path
+         stroke="#e69f00"
+         d="m 386.13,503.23 h 8.9 v -3.36 h -8.9 z"
+         id="path126" />
+      <path
+         stroke="#e69f00"
+         d="m 386.13,502.22 h 8.9 m -4.45,2.69 v -1.68 m 0,-3.36 v -2.68 m -9,0 h 18 m -18,7.72 h 18"
+         id="path127" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_35"
+     fill="none">
+    <title
+       id="title127">gnuplot_plot_35</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g129">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g128">
+        <polygon
+           fill="#e69f00"
+           fill-opacity="0.25"
+           points="483.93,506.25 475.03,506.25 475.03,509.27 483.93,509.27 "
+           id="polygon127" />
+      </g>
+      <path
+         stroke="#e69f00"
+         d="m 475.03,509.27 h 8.9 v -3.02 h -8.9 z"
+         id="path128" />
+      <path
+         stroke="#e69f00"
+         d="m 475.03,508.27 h 8.9 m -4.45,2.68 v -1.68 m 0,-3.02 v -2.68 m -9,0 h 18 m -18,7.38 h 18"
+         id="path129" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_36"
+     fill="none">
+    <title
+       id="title129">gnuplot_plot_36</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g131">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g130">
+        <polygon
+           fill="#e69f00"
+           fill-opacity="0.25"
+           points="572.82,502.56 563.92,502.56 563.92,506.25 572.82,506.25 "
+           id="polygon129" />
+      </g>
+      <path
+         stroke="#e69f00"
+         d="m 563.92,506.25 h 8.9 v -3.69 h -8.9 z"
+         id="path130" />
+      <path
+         stroke="#e69f00"
+         d="m 563.92,504.57 h 8.9 m -4.45,4.37 v -2.69 m 0,-3.69 v -3.02 m -9,0 h 18 m -18,9.4 h 18"
+         id="path131" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_37"
+     fill="none">
+    <title
+       id="title131">gnuplot_plot_37</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g133">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g132">
+        <polygon
+           fill="#e69f00"
+           fill-opacity="0.25"
+           points="661.72,554.59 652.82,554.59 652.82,557.95 661.72,557.95 "
+           id="polygon131" />
+      </g>
+      <path
+         stroke="#e69f00"
+         d="m 652.82,557.95 h 8.9 v -3.36 h -8.9 z"
+         id="path132" />
+      <path
+         stroke="#e69f00"
+         d="m 652.82,556.1 h 8.9 m -4.45,2.85 v -1 m 0,-3.36 v -4.36 m -9,0 h 18 m -18,8.72 h 18"
+         id="path133" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_38"
+     fill="none">
+    <title
+       id="title133">gnuplot_plot_38</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g135">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g134">
+        <polygon
+           fill="#e69f00"
+           fill-opacity="0.25"
+           points="750.61,491.82 741.71,491.82 741.71,495.17 750.61,495.17 "
+           id="polygon133" />
+      </g>
+      <path
+         stroke="#e69f00"
+         d="m 741.71,495.17 h 8.9 v -3.35 h -8.9 z"
+         id="path134" />
+      <path
+         stroke="#e69f00"
+         d="m 741.71,493.83 h 8.9 m -4.45,6.04 v -4.7 m 0,-3.35 v -4.37 m -9,0 h 18 m -18,12.42 h 18"
+         id="path135" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_39"
+     fill="none">
+    <title
+       id="title135">gnuplot_plot_39</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g137">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g136">
+        <polygon
+           fill="#e69f00"
+           fill-opacity="0.25"
+           points="839.51,500.88 830.61,500.88 830.61,503.57 839.51,503.57 "
+           id="polygon135" />
+      </g>
+      <path
+         stroke="#e69f00"
+         d="m 830.61,503.57 h 8.9 v -2.69 h -8.9 z"
+         id="path136" />
+      <path
+         stroke="#e69f00"
+         d="m 830.61,502.56 h 8.9 m -4.45,4.03 v -3.02 m 0,-2.69 v -3.36 m -9,0 h 18 m -18,9.07 h 18"
+         id="path137" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_40"
+     fill="none">
+    <title
+       id="title137">gnuplot_plot_40</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g139">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g138">
+        <polygon
+           fill="#e69f00"
+           fill-opacity="0.25"
+           points="928.41,508.94 919.51,508.94 919.51,559.29 928.41,559.29 "
+           id="polygon137" />
+      </g>
+      <path
+         stroke="#e69f00"
+         d="m 919.51,559.29 h 8.9 v -50.35 h -8.9 z"
+         id="path138" />
+      <path
+         stroke="#e69f00"
+         d="m 919.51,535.46 h 8.9 m -4.45,23.83 m 0,-50.35 v -48.68 m -9,0 h 18 m -18,99.03 h 18"
+         id="path139" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_41"
+     fill="none">
+    <title
+       id="title139">gnuplot_plot_41</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g141">
+      <g
+         transform="translate(905.42,21.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g140">
+        <text
+           id="text139">20240404-vte_0.74.2_f39-300x74.dat</text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g143">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g142">
+        <polygon
+           fill="#f0e442"
+           fill-opacity="0.25"
+           points="956.37,13.5 913.81,13.5 913.81,22.5 956.37,22.5 "
+           id="polygon141" />
+        <polygon
+           fill="#f0e442"
+           fill-opacity="0.25"
+           points="138.22,535.12 129.32,535.12 129.32,537.13 138.22,537.13 "
+           id="polygon142" />
+      </g>
+      <path
+         stroke="#f0e442"
+         d="m 129.32,537.13 h 8.9 v -2.01 h -8.9 z"
+         id="path142" />
+      <path
+         stroke="#f0e442"
+         d="m 129.32,536.13 h 8.9 m -4.45,3.02 v -2.02 m 0,-2.01 v -3.02 m -9,0 h 18 m -18,7.05 h 18"
+         id="path143" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_42"
+     fill="none">
+    <title
+       id="title143">gnuplot_plot_42</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g144" />
+  </g>
+  <g
+     id="gnuplot_plot_43"
+     fill="none">
+    <title
+       id="title144">gnuplot_plot_43</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g146">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g145">
+        <polygon
+           fill="#f0e442"
+           fill-opacity="0.25"
+           points="316.01,559.29 307.11,559.29 316.01,559.29 "
+           id="polygon144" />
+      </g>
+      <path
+         stroke="#f0e442"
+         d="m 307.11,559.29 h 8.9 z"
+         id="path145" />
+      <path
+         stroke="#f0e442"
+         d="m 307.11,559.29 h 8.9 m -4.45,0 m -9,0 h 18 m -18,0 h 18"
+         id="path146" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_44"
+     fill="none">
+    <title
+       id="title146">gnuplot_plot_44</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g148">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g147">
+        <polygon
+           fill="#f0e442"
+           fill-opacity="0.25"
+           points="404.91,470.17 396.01,470.17 396.01,475.37 404.91,475.37 "
+           id="polygon146" />
+      </g>
+      <path
+         stroke="#f0e442"
+         d="m 396.01,475.37 h 8.9 v -5.2 h -8.9 z"
+         id="path147" />
+      <path
+         stroke="#f0e442"
+         d="m 396.01,471.51 h 8.9 m -4.45,11.58 v -7.72 m 0,-5.2 v -5.88 m -9,0 h 18 m -18,18.8 h 18"
+         id="path148" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_45"
+     fill="none">
+    <title
+       id="title148">gnuplot_plot_45</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g150">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g149">
+        <polygon
+           fill="#f0e442"
+           fill-opacity="0.25"
+           points="493.8,485.78 484.9,485.78 484.9,492.82 493.8,492.82 "
+           id="polygon148" />
+      </g>
+      <path
+         stroke="#f0e442"
+         d="m 484.9,492.82 h 8.9 v -7.04 h -8.9 z"
+         id="path149" />
+      <path
+         stroke="#f0e442"
+         d="m 484.9,487.12 h 8.9 m -4.45,13.42 v -7.72 m 0,-7.04 v -6.05 m -9,0 h 18 m -18,20.81 h 18"
+         id="path150" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_46"
+     fill="none">
+    <title
+       id="title150">gnuplot_plot_46</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g152">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g151">
+        <polygon
+           fill="#f0e442"
+           fill-opacity="0.25"
+           points="582.7,482.08 573.8,482.08 573.8,487.45 582.7,487.45 "
+           id="polygon150" />
+      </g>
+      <path
+         stroke="#f0e442"
+         d="m 573.8,487.45 h 8.9 v -5.37 h -8.9 z"
+         id="path151" />
+      <path
+         stroke="#f0e442"
+         d="m 573.8,485.44 h 8.9 m -4.45,7.72 v -5.71 m 0,-5.37 v -6.38 m -9,0 h 18 m -18,17.46 h 18"
+         id="path152" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_47"
+     fill="none">
+    <title
+       id="title152">gnuplot_plot_47</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g154">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g153">
+        <polygon
+           fill="#f0e442"
+           fill-opacity="0.25"
+           points="671.6,541.5 662.7,541.5 662.7,558.95 671.6,558.95 "
+           id="polygon152" />
+      </g>
+      <path
+         stroke="#f0e442"
+         d="m 662.7,558.95 h 8.9 V 541.5 h -8.9 z"
+         id="path153" />
+      <path
+         stroke="#f0e442"
+         d="m 662.7,558.95 h 8.9 m -4.45,0 m 0,-17.45 v -10.07 m -9,0 h 18 m -18,27.52 h 18"
+         id="path154" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_48"
+     fill="none">
+    <title
+       id="title154">gnuplot_plot_48</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g156">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g155">
+        <polygon
+           fill="#f0e442"
+           fill-opacity="0.25"
+           points="760.49,468.99 751.59,468.99 751.59,479.73 760.49,479.73 "
+           id="polygon154" />
+      </g>
+      <path
+         stroke="#f0e442"
+         d="m 751.59,479.73 h 8.9 v -10.74 h -8.9 z"
+         id="path155" />
+      <path
+         stroke="#f0e442"
+         d="m 751.59,474.7 h 8.9 m -4.45,14.77 v -9.74 m 0,-10.74 V 455.9 m -9,0 h 18 m -18,33.57 h 18"
+         id="path156" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_49"
+     fill="none">
+    <title
+       id="title156">gnuplot_plot_49</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g158">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g157">
+        <polygon
+           fill="#f0e442"
+           fill-opacity="0.25"
+           points="849.39,483.76 840.49,483.76 840.49,491.15 849.39,491.15 "
+           id="polygon156" />
+      </g>
+      <path
+         stroke="#f0e442"
+         d="m 840.49,491.15 h 8.9 v -7.39 h -8.9 z"
+         id="path157" />
+      <path
+         stroke="#f0e442"
+         d="m 840.49,486.61 h 8.9 m -4.45,12.26 v -7.72 m 0,-7.39 v -7.05 m -9,0 h 18 m -18,22.16 h 18"
+         id="path158" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_50"
+     fill="none">
+    <title
+       id="title158">gnuplot_plot_50</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g160">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g159">
+        <polygon
+           fill="#f0e442"
+           fill-opacity="0.25"
+           points="938.28,347.64 929.38,347.64 929.38,551.06 938.28,551.06 "
+           id="polygon158" />
+      </g>
+      <path
+         stroke="#f0e442"
+         d="m 929.38,551.06 h 8.9 V 347.64 h -8.9 z"
+         id="path159" />
+      <path
+         stroke="#f0e442"
+         d="m 929.38,441.8 h 8.9 m -4.45,117.49 v -8.23 m 0,-203.42 V 116.19 m -9,0 h 18 m -18,443.1 h 18"
+         id="path160" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_51"
+     fill="none">
+    <title
+       id="title160">gnuplot_plot_51</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g162">
+      <g
+         transform="translate(905.42,39.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g161">
+        <text
+           id="text160">20240404-vte_0.76.0_f40-300x74.dat</text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g164">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g163">
+        <polygon
+           fill="#0072b2"
+           fill-opacity="0.25"
+           points="956.37,31.5 913.81,31.5 913.81,40.5 956.37,40.5 "
+           id="polygon162" />
+        <polygon
+           fill="#0072b2"
+           fill-opacity="0.25"
+           points="148.1,535.12 139.2,535.12 139.2,541.5 148.1,541.5 "
+           id="polygon163" />
+      </g>
+      <path
+         stroke="#0072b2"
+         d="m 139.2,541.5 h 8.9 v -6.38 h -8.9 z"
+         id="path163" />
+      <path
+         stroke="#0072b2"
+         d="m 139.2,537.81 h 8.9 m -4.45,9.73 v -6.04 m 0,-6.38 v -6.38 m -9,0 h 18 m -18,18.8 h 18"
+         id="path164" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_52"
+     fill="none">
+    <title
+       id="title164">gnuplot_plot_52</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g166">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g165">
+        <polygon
+           fill="#0072b2"
+           fill-opacity="0.25"
+           points="236.99,386.41 228.09,386.41 228.09,437.77 236.99,437.77 "
+           id="polygon164" />
+      </g>
+      <path
+         stroke="#0072b2"
+         d="m 228.09,437.77 h 8.9 v -51.36 h -8.9 z"
+         id="path165" />
+      <path
+         stroke="#0072b2"
+         d="m 228.09,415.62 h 8.9 m -4.45,60.76 v -38.61 m 0,-51.36 v -67.47 m -9,0 h 18 m -18,157.44 h 18"
+         id="path166" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_53"
+     fill="none">
+    <title
+       id="title166">gnuplot_plot_53</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g168">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g167">
+        <polygon
+           fill="#0072b2"
+           fill-opacity="0.25"
+           points="325.89,557.61 316.99,557.61 316.99,559.29 325.89,559.29 "
+           id="polygon166" />
+      </g>
+      <path
+         stroke="#0072b2"
+         d="m 316.99,559.29 h 8.9 v -1.68 h -8.9 z"
+         id="path167" />
+      <path
+         stroke="#0072b2"
+         d="m 316.99,558.28 h 8.9 m -4.45,1.34 v -0.33 m 0,-1.68 v -2.35 m -9,0 h 18 m -18,4.36 h 18"
+         id="path168" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_54"
+     fill="none">
+    <title
+       id="title168">gnuplot_plot_54</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g170">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g169">
+        <polygon
+           fill="#0072b2"
+           fill-opacity="0.25"
+           points="414.78,503.9 405.88,503.9 405.88,505.58 414.78,505.58 "
+           id="polygon168" />
+      </g>
+      <path
+         stroke="#0072b2"
+         d="m 405.88,505.58 h 8.9 v -1.68 h -8.9 z"
+         id="path169" />
+      <path
+         stroke="#0072b2"
+         d="m 405.88,504.91 h 8.9 m -4.45,2.01 v -1.34 m 0,-1.68 v -1.68 m -9,0 h 18 m -18,4.7 h 18"
+         id="path170" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_55"
+     fill="none">
+    <title
+       id="title170">gnuplot_plot_55</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g172">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g171">
+        <polygon
+           fill="#0072b2"
+           fill-opacity="0.25"
+           points="503.68,505.92 494.78,505.92 494.78,507.59 503.68,507.59 "
+           id="polygon170" />
+      </g>
+      <path
+         stroke="#0072b2"
+         d="m 494.78,507.59 h 8.9 v -1.67 h -8.9 z"
+         id="path171" />
+      <path
+         stroke="#0072b2"
+         d="m 494.78,506.59 h 8.9 m -4.45,2.68 v -1.68 m 0,-1.67 v -1.68 m -9,0 h 18 m -18,5.03 h 18"
+         id="path172" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_56"
+     fill="none">
+    <title
+       id="title172">gnuplot_plot_56</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g174">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g173">
+        <polygon
+           fill="#0072b2"
+           fill-opacity="0.25"
+           points="592.58,502.56 583.68,502.56 583.68,504.57 592.58,504.57 "
+           id="polygon172" />
+      </g>
+      <path
+         stroke="#0072b2"
+         d="m 583.68,504.57 h 8.9 v -2.01 h -8.9 z"
+         id="path173" />
+      <path
+         stroke="#0072b2"
+         d="m 583.68,503.23 h 8.9 m -4.45,3.36 v -2.02 m 0,-2.01 v -2.35 m -9,0 h 18 m -18,6.38 h 18"
+         id="path174" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_57"
+     fill="none">
+    <title
+       id="title174">gnuplot_plot_57</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g176">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g175">
+        <polygon
+           fill="#0072b2"
+           fill-opacity="0.25"
+           points="681.47,555.26 672.57,555.26 672.57,558.62 681.47,558.62 "
+           id="polygon174" />
+      </g>
+      <path
+         stroke="#0072b2"
+         d="m 672.57,558.62 h 8.9 v -3.36 h -8.9 z"
+         id="path175" />
+      <path
+         stroke="#0072b2"
+         d="m 672.57,556.6 h 8.9 m -4.45,2.35 v -0.33 m 0,-3.36 v -5.03 m -9,0 h 18 m -18,8.72 h 18"
+         id="path176" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_58"
+     fill="none">
+    <title
+       id="title176">gnuplot_plot_58</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g178">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g177">
+        <polygon
+           fill="#0072b2"
+           fill-opacity="0.25"
+           points="770.37,493.16 761.47,493.16 761.47,496.01 770.37,496.01 "
+           id="polygon176" />
+      </g>
+      <path
+         stroke="#0072b2"
+         d="m 761.47,496.01 h 8.9 v -2.85 h -8.9 z"
+         id="path177" />
+      <path
+         stroke="#0072b2"
+         d="m 761.47,495.01 h 8.9 m -4.45,4.53 v -3.53 m 0,-2.85 v -3.69 m -9,0 h 18 m -18,10.07 h 18"
+         id="path178" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_59"
+     fill="none">
+    <title
+       id="title178">gnuplot_plot_59</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g180">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g179">
+        <polygon
+           fill="#0072b2"
+           fill-opacity="0.25"
+           points="859.27,501.55 850.37,501.55 850.37,504.24 859.27,504.24 "
+           id="polygon178" />
+      </g>
+      <path
+         stroke="#0072b2"
+         d="m 850.37,504.24 h 8.9 v -2.69 h -8.9 z"
+         id="path179" />
+      <path
+         stroke="#0072b2"
+         d="m 850.37,502.89 h 8.9 m -4.45,3.7 v -2.35 m 0,-2.69 v -3.02 m -9,0 h 18 m -18,8.06 h 18"
+         id="path180" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_60"
+     fill="none">
+    <title
+       id="title180">gnuplot_plot_60</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g182">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g181">
+        <polygon
+           fill="#0072b2"
+           fill-opacity="0.25"
+           points="948.16,481.75 939.26,481.75 939.26,531.43 948.16,531.43 "
+           id="polygon180" />
+      </g>
+      <path
+         stroke="#0072b2"
+         d="m 939.26,531.43 h 8.9 v -49.68 h -8.9 z"
+         id="path181" />
+      <path
+         stroke="#0072b2"
+         d="m 939.26,507.59 h 8.9 m -4.45,51.7 v -27.86 m 0,-49.68 v -46.66 m -9,0 h 18 m -18,124.2 h 18"
+         id="path182" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_61"
+     fill="none">
+    <title
+       id="title182">gnuplot_plot_61</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g184">
+      <g
+         transform="translate(905.42,57.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g183">
+        <text
+           id="text182">20240404-gnome_terminal_3.50.1_f39-300x74.dat</text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g186">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g185">
+        <polygon
+           fill="#e51e10"
+           fill-opacity="0.25"
+           points="956.37,49.5 913.81,49.5 913.81,58.5 956.37,58.5 "
+           id="polygon184" />
+        <polygon
+           fill="#e51e10"
+           fill-opacity="0.25"
+           points="157.97,527.06 149.07,527.06 149.07,556.27 157.97,556.27 "
+           id="polygon185" />
+      </g>
+      <path
+         stroke="#e51e10"
+         d="m 149.07,556.27 h 8.9 v -29.21 h -8.9 z"
+         id="path185" />
+      <path
+         stroke="#e51e10"
+         d="m 149.07,555.93 h 8.9 m -4.45,0.34 m 0,-29.21 v -6.37 m -9,0 h 18 m -18,35.58 h 18"
+         id="path186" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_62"
+     fill="none">
+    <title
+       id="title186">gnuplot_plot_62</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g188">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g187">
+        <polygon
+           fill="#e51e10"
+           fill-opacity="0.25"
+           points="246.87,429.72 237.97,429.72 237.97,453.21 246.87,453.21 "
+           id="polygon186" />
+      </g>
+      <path
+         stroke="#e51e10"
+         d="m 237.97,453.21 h 8.9 v -23.49 h -8.9 z"
+         id="path187" />
+      <path
+         stroke="#e51e10"
+         d="m 237.97,440.46 h 8.9 m -4.45,39.61 v -26.86 m 0,-23.49 v -22.49 m -9,0 h 18 m -18,72.84 h 18"
+         id="path188" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_63"
+     fill="none">
+    <title
+       id="title188">gnuplot_plot_63</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g190">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g189">
+        <polygon
+           fill="#e51e10"
+           fill-opacity="0.25"
+           points="335.77,559.29 326.87,559.29 335.77,559.29 "
+           id="polygon188" />
+      </g>
+      <path
+         stroke="#e51e10"
+         d="m 326.87,559.29 h 8.9 z"
+         id="path189" />
+      <path
+         stroke="#e51e10"
+         d="m 326.87,559.29 h 8.9 m -4.45,0 m -9,0 h 18 m -18,0 h 18"
+         id="path190" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_64"
+     fill="none">
+    <title
+       id="title190">gnuplot_plot_64</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g192">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g191">
+        <polygon
+           fill="#e51e10"
+           fill-opacity="0.25"
+           points="424.66,478.73 415.76,478.73 415.76,484.1 424.66,484.1 "
+           id="polygon190" />
+      </g>
+      <path
+         stroke="#e51e10"
+         d="m 415.76,484.1 h 8.9 v -5.37 h -8.9 z"
+         id="path191" />
+      <path
+         stroke="#e51e10"
+         d="m 415.76,481.24 h 8.9 m -4.45,6.88 v -4.02 m 0,-5.37 v -4.03 m -9,0 h 18 m -18,13.42 h 18"
+         id="path192" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_65"
+     fill="none">
+    <title
+       id="title192">gnuplot_plot_65</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g194">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g193">
+        <polygon
+           fill="#e51e10"
+           fill-opacity="0.25"
+           points="513.56,499.54 504.66,499.54 504.66,502.89 513.56,502.89 "
+           id="polygon192" />
+      </g>
+      <path
+         stroke="#e51e10"
+         d="m 504.66,502.89 h 8.9 v -3.35 h -8.9 z"
+         id="path193" />
+      <path
+         stroke="#e51e10"
+         d="m 504.66,501.22 h 8.9 m -4.45,5.37 v -3.7 m 0,-3.35 v -4.37 m -9,0 h 18 m -18,11.42 h 18"
+         id="path194" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_66"
+     fill="none">
+    <title
+       id="title194">gnuplot_plot_66</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g196">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g195">
+        <polygon
+           fill="#e51e10"
+           fill-opacity="0.25"
+           points="602.45,496.18 593.55,496.18 593.55,500.21 602.45,500.21 "
+           id="polygon194" />
+      </g>
+      <path
+         stroke="#e51e10"
+         d="m 593.55,500.21 h 8.9 v -4.03 h -8.9 z"
+         id="path195" />
+      <path
+         stroke="#e51e10"
+         d="m 593.55,498.87 h 8.9 M 598,503.9 v -3.69 m 0,-4.03 v -3.69 m -9,0 h 18 m -18,11.41 h 18"
+         id="path196" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_67"
+     fill="none">
+    <title
+       id="title196">gnuplot_plot_67</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g198">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g197">
+        <polygon
+           fill="#e51e10"
+           fill-opacity="0.25"
+           points="691.35,540.15 682.45,540.15 682.45,558.95 691.35,558.95 "
+           id="polygon196" />
+      </g>
+      <path
+         stroke="#e51e10"
+         d="m 682.45,558.95 h 8.9 v -18.8 h -8.9 z"
+         id="path197" />
+      <path
+         stroke="#e51e10"
+         d="m 682.45,543.85 h 8.9 m -4.45,15.1 m 0,-18.8 v -14.43 m -9,0 h 18 m -18,33.23 h 18"
+         id="path198" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_68"
+     fill="none">
+    <title
+       id="title198">gnuplot_plot_68</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g200">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g199">
+        <polygon
+           fill="#e51e10"
+           fill-opacity="0.25"
+           points="780.25,480.4 771.35,480.4 771.35,488.8 780.25,488.8 "
+           id="polygon198" />
+      </g>
+      <path
+         stroke="#e51e10"
+         d="m 771.35,488.8 h 8.9 v -8.4 h -8.9 z"
+         id="path199" />
+      <path
+         stroke="#e51e10"
+         d="m 771.35,484.77 h 8.9 m -4.45,10.74 v -6.71 m 0,-8.4 v -6.71 m -9,0 h 18 m -18,21.82 h 18"
+         id="path200" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_69"
+     fill="none">
+    <title
+       id="title200">gnuplot_plot_69</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g202">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g201">
+        <polygon
+           fill="#e51e10"
+           fill-opacity="0.25"
+           points="869.14,492.49 860.24,492.49 860.24,496.52 869.14,496.52 "
+           id="polygon200" />
+      </g>
+      <path
+         stroke="#e51e10"
+         d="m 860.24,496.52 h 8.9 v -4.03 h -8.9 z"
+         id="path201" />
+      <path
+         stroke="#e51e10"
+         d="m 860.24,495.01 h 8.9 m -4.45,7.21 v -5.7 m 0,-4.03 v -4.7 m -9,0 h 18 m -18,14.43 h 18"
+         id="path202" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_70"
+     fill="none">
+    <title
+       id="title202">gnuplot_plot_70</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g204">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g203">
+        <polygon
+           fill="#e51e10"
+           fill-opacity="0.25"
+           points="958.04,521.86 949.14,521.86 949.14,558.95 958.04,558.95 "
+           id="polygon202" />
+      </g>
+      <path
+         stroke="#e51e10"
+         d="m 949.14,558.95 h 8.9 v -37.09 h -8.9 z"
+         id="path203" />
+      <path
+         stroke="#e51e10"
+         d="m 949.14,558.95 h 8.9 m -4.45,0.34 v -0.34 m 0,-37.09 V 489.8 m -9,0 h 18 m -18,69.49 h 18"
+         id="path204" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_71"
+     fill="none">
+    <title
+       id="title204">gnuplot_plot_71</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g206">
+      <g
+         transform="translate(905.42,75.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g205">
+        <text
+           id="text204">20240404-gnome_terminal_3.50.1_f40-300x74.dat</text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g208">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g207">
+        <polygon
+           fill="#000000"
+           fill-opacity="0.25"
+           points="956.37,67.5 913.81,67.5 913.81,76.5 956.37,76.5 "
+           id="polygon206" />
+        <polygon
+           fill="#000000"
+           fill-opacity="0.25"
+           points="167.85,527.4 158.95,527.4 158.95,535.79 167.85,535.79 "
+           id="polygon207" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 158.95,535.79 h 8.9 v -8.39 h -8.9 z"
+         id="path207" />
+      <path
+         stroke="#000000"
+         d="m 158.95,531.09 h 8.9 m -4.45,12.42 v -7.72 m 0,-8.39 v -11.08 m -9,0 h 18 m -18,27.19 h 18"
+         id="path208" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_72"
+     fill="none">
+    <title
+       id="title208">gnuplot_plot_72</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g210">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g209">
+        <polygon
+           fill="#000000"
+           fill-opacity="0.25"
+           points="256.75,300.82 247.85,300.82 247.85,327.33 256.75,327.33 "
+           id="polygon208" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 247.85,327.33 h 8.9 v -26.51 h -8.9 z"
+         id="path209" />
+      <path
+         stroke="#000000"
+         d="m 247.85,313.57 h 8.9 m -4.45,40.95 v -27.19 m 0,-26.51 V 284.7 m -9,0 h 18 m -18,69.82 h 18"
+         id="path210" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_73"
+     fill="none">
+    <title
+       id="title210">gnuplot_plot_73</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g212">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g211">
+        <polygon
+           fill="#000000"
+           fill-opacity="0.25"
+           points="345.64,555.93 336.74,555.93 336.74,559.29 345.64,559.29 "
+           id="polygon210" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 336.74,559.29 h 8.9 v -3.36 h -8.9 z"
+         id="path211" />
+      <path
+         stroke="#000000"
+         d="m 336.74,556.6 h 8.9 m -4.45,2.69 m 0,-3.36 v -4.03 m -9,0 h 18 m -18,7.39 h 18"
+         id="path212" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_74"
+     fill="none">
+    <title
+       id="title212">gnuplot_plot_74</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g214">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g213">
+        <polygon
+           fill="#000000"
+           fill-opacity="0.25"
+           points="434.54,494.17 425.64,494.17 425.64,496.85 434.54,496.85 "
+           id="polygon212" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 425.64,496.85 h 8.9 v -2.68 h -8.9 z"
+         id="path213" />
+      <path
+         stroke="#000000"
+         d="m 425.64,495.34 h 8.9 m -4.45,4.53 v -3.02 m 0,-2.68 v -3.7 m -9,0 h 18 m -18,9.4 h 18"
+         id="path214" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_75"
+     fill="none">
+    <title
+       id="title214">gnuplot_plot_75</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g216">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g215">
+        <polygon
+           fill="#000000"
+           fill-opacity="0.25"
+           points="523.44,499.03 514.54,499.03 514.54,501.22 523.44,501.22 "
+           id="polygon214" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 514.54,501.22 h 8.9 v -2.19 h -8.9 z"
+         id="path215" />
+      <path
+         stroke="#000000"
+         d="m 514.54,500.21 h 8.9 m -4.45,3.36 v -2.35 m 0,-2.19 v -2.85 m -9,0 h 18 m -18,7.39 h 18"
+         id="path216" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_76"
+     fill="none">
+    <title
+       id="title216">gnuplot_plot_76</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g218">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g217">
+        <polygon
+           fill="#000000"
+           fill-opacity="0.25"
+           points="612.33,493.5 603.43,493.5 603.43,497.52 612.33,497.52 "
+           id="polygon216" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 603.43,497.52 h 8.9 v -4.02 h -8.9 z"
+         id="path217" />
+      <path
+         stroke="#000000"
+         d="m 603.43,495.85 h 8.9 m -4.45,6.71 v -5.04 m 0,-4.02 v -4.03 m -9,0 h 18 m -18,13.09 h 18"
+         id="path218" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_77"
+     fill="none">
+    <title
+       id="title218">gnuplot_plot_77</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g220">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g219">
+        <polygon
+           fill="#000000"
+           fill-opacity="0.25"
+           points="701.23,553.25 692.33,553.25 692.33,557.27 701.23,557.27 "
+           id="polygon218" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 692.33,557.27 h 8.9 v -4.02 h -8.9 z"
+         id="path219" />
+      <path
+         stroke="#000000"
+         d="m 692.33,554.59 h 8.9 m -4.45,4.36 v -1.68 m 0,-4.02 v -5.04 m -9,0 h 18 m -18,10.74 h 18"
+         id="path220" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_78"
+     fill="none">
+    <title
+       id="title220">gnuplot_plot_78</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g222">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g221">
+        <polygon
+           fill="#000000"
+           fill-opacity="0.25"
+           points="790.12,484.77 781.22,484.77 781.22,487.45 790.12,487.45 "
+           id="polygon220" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 781.22,487.45 h 8.9 v -2.68 h -8.9 z"
+         id="path221" />
+      <path
+         stroke="#000000"
+         d="m 781.22,486.11 h 8.9 m -4.45,3.36 v -2.02 m 0,-2.68 v -4.03 m -9,0 h 18 m -18,8.73 h 18"
+         id="path222" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_79"
+     fill="none">
+    <title
+       id="title222">gnuplot_plot_79</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g224">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g223">
+        <polygon
+           fill="#000000"
+           fill-opacity="0.25"
+           points="879.02,493.66 870.12,493.66 870.12,496.18 879.02,496.18 "
+           id="polygon222" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 870.12,496.18 h 8.9 v -2.52 h -8.9 z"
+         id="path223" />
+      <path
+         stroke="#000000"
+         d="m 870.12,495.17 h 8.9 m -4.45,3.36 v -2.35 m 0,-2.52 v -3.19 m -9,0 h 18 m -18,8.06 h 18"
+         id="path224" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_80"
+     fill="none">
+    <title
+       id="title224">gnuplot_plot_80</title>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g226">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g225">
+        <polygon
+           fill="#000000"
+           fill-opacity="0.25"
+           points="967.92,420.82 959.02,420.82 959.02,511.45 967.92,511.45 "
+           id="polygon224" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 959.02,511.45 h 8.9 v -90.63 h -8.9 z"
+         id="path225" />
+      <path
+         stroke="#000000"
+         d="m 959.02,466.64 h 8.9 m -4.45,92.65 v -47.84 m 0,-90.63 v -66.3 m -9,0 h 18 m -18,204.77 h 18"
+         id="path226" />
+    </g>
+  </g>
+  <g
+     fill="none"
+     color="#ffffff"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g227" />
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="2"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g228" />
+  <g
+     fill="none"
+     color="#000000"
+     stroke="#000000"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g229" />
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g230">
+    <path
+       stroke="#000000"
+       d="m 80.92,90.01 v 469.95 h 893.9 V 90.01 Z"
+       id="path229" />
+  </g>
+  <g
+     fill="none"
+     color="#000000"
+     stroke="currentColor"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     id="g231" />
 </svg>
-
