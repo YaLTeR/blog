@@ -84,6 +84,7 @@ tr:nth-child(odd)>td {
 .content ol,
 .content ul,
 .content blockquote,
+.content details,
 .content h1,
 .content h2,
 .content h3,
