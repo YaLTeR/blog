@@ -14,7 +14,7 @@
 {{- end -}}
 <figure>
     {{ if .IsNamedParams }}
-    <img src="{{ $url | safeURL }}" {{ with .Get "width" }}width="{{ . }}"{{ end }} />
+    <img src="{{ $url | safeURL }}" {{ with .Get "width" }}width="{{ . }}"{{ end }} {{ with .Get "alt" }}alt="{{ . }}"{{ end }} />
     {{ else }}
     <img src="{{ $url | safeURL }}" />
     {{ end }}
