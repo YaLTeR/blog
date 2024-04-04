@@ -231,6 +231,9 @@ Just make sure you're running VTE 0.76, which has all of this goodness.
 
 Huge thanks to the VTE maintainers and contributors for making this a reality, and congratulations on an awesome release!
 
+P.S. If you're curious about Ptyxis or about the behavior of GTK's NGL vs. NVK vs. GL renderers, they all perform similarly to the F40 VTE Test App results that I've shown.
+I did more extensive benchmarks of these a month ago, you can find them [here](https://gitlab.gnome.org/-/snippets/6439).
+
 [^1]: Just a few weeks ago some measurements I took showed a suspicious one-frame-long gap in the dots.
 And guess what, it was a frame scheduling bug in [my compositor](https://github.com/YaLTeR/niri), with none other than myself to blame for it.
 Thankfully, it wasn't hard to fix, and easy to verify afterward by redoing the same test.
