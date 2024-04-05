@@ -1,6 +1,6 @@
 ---
 title: "Just How Much Faster Are the GNOME 46 Terminals?"
-date: 2024-04-04T14:16:50+04:00
+date: 2024-04-05T10:52:00+04:00
 tags:
 - gnome
 - planet-gnome
@@ -12,6 +12,8 @@ draft: true
 ---
 
 ![](./header.jpg)
+
+THIS IS A DRAFT.
 
 [VTE] (Virtual TErminal library) is the library underpinning various GNOME terminal emulators.
 It provides a GTK widget that shows a terminal view, which is used in apps like [GNOME Terminal], [Console], [Black Box], [Tilix], [Terminator], [Ptyxis], and others.
@@ -42,10 +44,10 @@ So, how do you measure it?
 
 There are tools like [Typometer] that measure the input latency in software by detecting key press events and recording the screen to detect a change in pixel color.
 This can work reasonably well but requires fiddling with your setup to make sure you're not accidentally introducing any biases.
-For example, a screen capture API may return the new pixel colors before or after they are shown on the monitor, depending on the system setup, and you need to be aware of this to tell if your measurements are right.
+For example, a screen capture API may return the new pixel colors a few milliseconds before or after they are shown on the monitor, depending on the system setup, and you need to be aware of this when trying to measure something to a millisecond precision.
 
 I've got something more interesting, a hardware input latency tester!
-It consists of a light sensor attached to a Teensy board, which in turn is plugged into the computer via USB.
+It consists of a light sensor attached to a [Teensy](https://www.pjrc.com/store/teensy32.html) board, which in turn is plugged into the computer via USB.
 
 {{< image-figure src="./latency-tester.jpg" width=300 alt="Photo of the latency tester." >}}
 {{</ image-figure >}}
@@ -55,6 +57,7 @@ I used that post as a reference for building mine, but I wrote [my own firmware]
 
 The main benefit of such a device is that it allows you to measure a full end-to-end input latency, including processing time in the kernel, the compositor, the application, and then the response time of the monitor itself.
 You are measuring what you really see and feel, excluding only the keyboard firmware (since the latency tester sends key press events directly over USB).
+There's also very little extra load on the system, especially compared to using something like a screen capture API.
 
 Here's a gist of how it works.
 The light sensor is aimed at a specific, small area on the monitor, which will be affected by the key press (in our case, a specific character cell in the terminal).
@@ -114,7 +117,7 @@ I did all tests on this system:
 
 - [Lenovo Legion 7 Gen 7 AMD](https://www.lenovo.com/us/en/p/laptops/legion-laptops/legion-7-series/legion-7-gen-7-(16-inch-amd)/len101g0017) with Ryzen 7 6800H CPU and Radeon RX 6700M dGPU (using the dGPU exclusively via the MUX switch).
 - Monitor: [Acer Nitro XV320QU](https://www.acer.com/il-en/monitors/gaming/nitro-xv0/pdp/UM.JX0EE.V01), 2560×1440, 144&nbsp;Hz, using 100% scale.
-- Host: Fedora&nbsp;40 Silverblue Beta, mesa&nbsp;24.0.4.
+- Host: Fedora&nbsp;40 Silverblue Beta, Mesa&nbsp;24.0.4.
 - Compositor: raw Mutter&nbsp;46.0.
 
 What is raw Mutter, you may ask?
@@ -128,12 +131,12 @@ I'm testing several terminal applications. In the order of appearance on the plo
 - [Alacritty]: not VTE-based; serves as a baseline of sorts, because it is consistently one of the fastest terminals according to [all of my prior tests](https://mastodon.online/@YaLTeR/110837121102628111).
 - [Console]: GTK&nbsp;4, the default terminal in GNOME.[^3]
 - [VTE Test App](https://gitlab.gnome.org/GNOME/vte/-/tree/0.76.0/src/app): GTK&nbsp;4, a test terminal that lives in the VTE repository.
-- [Terminal][GNOME Terminal]: GTK&nbsp;3, used to be the default in GNOME, and is still shipped out of the box in several distributions.
+- [GNOME Terminal]: GTK&nbsp;3,[^4] used to be the default in GNOME, and is still shipped out of the box in several distributions.
 
 Since the intention is to compare GNOME&nbsp;45 to GNOME&nbsp;46, I used {{< inline-html >}}<a href=https://containertoolbx.org>toolb<span style="font-size: small; opacity: 0.5;">\0</span>x</a>{{</ inline-html >}} containers with Fedora&nbsp;39 and Fedora&nbsp;40 to install and run all terminals above, as packaged by Fedora with no extra tweaks.
 
 I ran the terminals one by one and put their windows in the top left corner of the monitor.
-The mouse cursor was outside the window for all tests.[^4]
+The mouse cursor was outside the window for all tests.[^5]
 
 ## Input Latency Tests
 
@@ -163,11 +166,11 @@ For the next test, I constructed a more realistic case.
 I took [a snapshot of my neovim setup](https://github.com/YaLTeR/dotfiles/tree/d3976398058f2f5b6eee57c7e656ee8e7f098ac5/common/.config/_nvim_latency) and opened the README from [Ptyxis].
 I then strategically replaced a square of text with Unicode full-block characters to provide a bright "landing pad" for the light sensor.
 
-{{< image-figure src="./test-kgx-nvim.png" width=500 >}}
+{{< image-figure src="./test-kgx-nvim.png" width=480 >}}
 {{</ image-figure >}}
 
 The test consists of repeatedly pressing Ctrl+D and Ctrl+U to scroll the text buffer down and up in neovim.
-The light sensor alternates between an empty line (dark) and the full-block landing pad (light).
+The light sensor alternates between an empty line (dark) and the full-block landing pad (bright).
 The neovim setup has a bunch of bells and whistles, so the terminal gets to have fun drawing the various underlines, undercurls, gutter icons, and the statusline.
 
 This is what the test process looks like:
@@ -175,7 +178,7 @@ This is what the test process looks like:
 {{< video-figure "./test-kgx-nvim.mp4" >}}
 {{</ video-figure >}}
 
-And here are the results:
+Here are the results:
 
 ![](./all-nvim.png)
 
@@ -243,7 +246,9 @@ Thankfully, it wasn't hard to fix, and easy to verify afterward by redoing the s
 [^3]: Your distribution may have a different idea of which terminal should be the default in its GNOME spin.
 For example, Fedora still ships GNOME Terminal by default.
 
-[^4]: To avoid the link-under-cursor detection logic skewing the results.
+[^4]: GNOME Terminal is being ported to GTK&nbsp;4 for GNOME&nbsp;47, but in GNOME&nbsp;46 it is still a GTK&nbsp;3 application.
+
+[^5]: To avoid the link-under-cursor detection logic skewing the results.
 
 [VTE]: https://gitlab.gnome.org/GNOME/vte
 [GNOME Terminal]: https://gitlab.gnome.org/GNOME/gnome-terminal
