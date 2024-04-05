@@ -99,9 +99,8 @@ li {
   margin-top: 0.5em;
 }
 .anchor { 
-  font-size: 100%; 
-  visibility: hidden; 
-  color:silver;
+  font-size: 75%; 
+  color: silver;
   text-decoration: none;
 }
 h1:hover a,
