@@ -229,6 +229,9 @@ Unfortunately, VTE still struggles with them and shows a huge spread, which push
 VTE had a round of massive performance improvements in GNOME&nbsp;46 which manifest as something you can really feel during normal terminal use.
 The input latency is down to almost matching the fastest terminals, even in a non-trivial neovim setup with lots of complexity on screen.
 
+The remaining difference, at least on these test cases, is close to negligible.
+Some of it can be explained by VTE doing a bit more extra work for accessibility (enabled in GNOME Terminal and currently disabled in the GTK&nbsp;4 terminals), scrollbar calculations, and other features.
+
 If you've been avoiding VTE-based terminals due to *sluggishness* and input lag, now is the time to give them another chance.
 Just make sure you're running VTE&nbsp;0.76, which includes all of this goodness.
 
