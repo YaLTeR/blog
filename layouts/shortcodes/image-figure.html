@@ -13,11 +13,13 @@
     {{- end -}}
 {{- end -}}
 <figure>
+    <a href="{{ $url | safeURL }}">
     {{ if .IsNamedParams }}
     <img src="{{ $url | safeURL }}" {{ with .Get "width" }}width="{{ . }}"{{ end }} {{ with .Get "alt" }}alt="{{ . }}"{{ end }} />
     {{ else }}
     <img src="{{ $url | safeURL }}" />
     {{ end }}
+    </a>
     <figcaption>
         {{ .Inner | .Page.RenderString (dict "display" "block") }}
     </figcaption>

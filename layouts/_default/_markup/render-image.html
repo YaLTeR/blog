@@ -7,4 +7,6 @@
         {{- $url = (print .Page.Permalink $url) -}}
     {{- end -}}
 {{- end -}}
-<img src="{{ $url | safeURL }}" alt="{{ .Text }}" {{ with .Title }} title="{{ . }}"{{ end }} />
+<a href="{{ $url | safeURL }}">
+    <img src="{{ $url | safeURL }}" alt="{{ .Text }}" {{ with .Title }} title="{{ . }}"{{ end }} />
+</a>
