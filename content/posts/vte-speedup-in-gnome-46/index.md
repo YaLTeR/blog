@@ -1,26 +1,23 @@
 ---
 title: "Just How Much Faster Are the GNOME 46 Terminals?"
-date: 2024-04-05T10:52:00+04:00
+date: 2024-04-06T12:00:00+04:00
 tags:
 - gnome
 - planet-gnome
 - profiling
 - latency
 summary: |
-    I use a hardware latency tester to measure how much the VTE-based terminals improved from GNOME&nbsp;45 to GNOME&nbsp;46.
-draft: true
+    I use a hardware latency tester to measure how much the VTE-based terminals improved from GNOME 45 to GNOME 46.
 ---
 
 ![](./header.jpg)
-
-THIS IS A DRAFT.
 
 [VTE] (Virtual TErminal library) is the library underpinning various GNOME terminal emulators.
 It provides a GTK widget that shows a terminal view, which is used in apps like [GNOME Terminal], [Console], [Black Box], [Tilix], [Terminator], [Ptyxis], and others.
 It also powers embedded terminals in [Builder] and [Workbench].
 
-Over the GNOME&nbsp;46 cycle, VTE has seen a *lot* of performance improvements.
-Christian Hergert mentioned some of them in his blog posts [about VTE](https://blogs.gnome.org/chergert/2023/10/03/vte-performance-improvements/) and [about his work in GNOME&nbsp;46](https://blogs.gnome.org/chergert/2024/03/25/gnome-45-46-retrospective/).
+Over the GNOME 46 cycle, VTE has seen a *lot* of performance improvements.
+Christian Hergert mentioned some of them in his blog posts [about VTE](https://blogs.gnome.org/chergert/2023/10/03/vte-performance-improvements/) and [about his work in GNOME 46](https://blogs.gnome.org/chergert/2024/03/25/gnome-45-46-retrospective/).
 But how much did the performance actually improve?
 What should you, the user, expect to *feel* after installing a fresh [Fedora] 40 update and launching your favorite terminal?
 
@@ -36,7 +33,7 @@ Apps with low input latency feel snappy, whereas apps with high input latency ca
 
 When the input latency is small-ish, you can get used to it and think it feels *fine*.
 However, comparing lower and higher input latency together (for example, by switching between two apps and typing in both) can make it quite noticeable.
-If you've ever heard people say they can't go back to a 60&nbsp;Hz monitor after trying out 144&nbsp;Hz, that's a similar effect (and input latency is partially responsible).
+If you've ever heard people say they can't go back to a 60 Hz monitor after trying out 144 Hz, that's a similar effect (and input latency is partially responsible).
 
 So, how do you measure it?
 
@@ -93,7 +90,7 @@ This is because monitors generally repaint at a constant rate, and pressing a ke
 We get the lowest latency if the application renders a new frame in response right in time for the monitor to show it.
 And we get the highest latency when the application finishes rendering a new frame *just* missing the monitor deadline, having to wait one extra repaint cycle for the pixel colors to change.
 
-In the example above, the dots are spread over 7--8&nbsp;ms, which is about equal to the ~6.94&nbsp;ms refresh cycle of my 144&nbsp;Hz monitor.
+In the example above, the dots are spread over 7--8 ms, which is about equal to the ~6.94 ms refresh cycle of my 144 Hz monitor.
 
 High outliers in the dots, or a larger spread, indicate lag or slowness of the application under test: some key presses are taking longer than others to process.
 
@@ -116,9 +113,9 @@ I just need to tell you what exactly I was measuring the latency of.
 I did all tests on this system:
 
 - [Lenovo Legion 7 Gen 7 AMD](https://www.lenovo.com/us/en/p/laptops/legion-laptops/legion-7-series/legion-7-gen-7-(16-inch-amd)/len101g0017) with Ryzen 7 6800H CPU and Radeon RX 6700M dGPU (using the dGPU exclusively via the MUX switch).
-- Monitor: [Acer Nitro XV320QU](https://www.acer.com/il-en/monitors/gaming/nitro-xv0/pdp/UM.JX0EE.V01), 2560×1440, 144&nbsp;Hz, using 100% scale.
-- Host: Fedora&nbsp;40 Silverblue Beta, Mesa&nbsp;24.0.4.
-- Compositor: raw Mutter&nbsp;46.0.
+- Monitor: [Acer Nitro XV320QU](https://www.acer.com/il-en/monitors/gaming/nitro-xv0/pdp/UM.JX0EE.V01), 2560×1440, 144 Hz, using 100% scale.
+- Host: Fedora 40 Silverblue Beta, Mesa 24.0.4.
+- Compositor: raw Mutter 46.0.
 
 What is raw Mutter, you may ask?
 Well, Mutter is the compositor that GNOME Shell builds on top of.
@@ -126,14 +123,15 @@ Turns out, you can start Mutter on its own, without GNOME Shell, by switching to
 This gives you a very bare-bones environment that is only really meant for testing.
 It is, however, quite useful for benchmarking, as it represents something close to a zero-overhead GNOME Shell ideal case.
 
-I'm testing several terminal applications. In the order of appearance on the plots, they are:
+I'm testing several terminal applications.
+In the order of appearance on the plots, they are:
 
 - [Alacritty]: not VTE-based; serves as a baseline of sorts, because it is consistently one of the fastest terminals according to [all of my prior tests](https://mastodon.online/@YaLTeR/110837121102628111).
-- [Console]: GTK&nbsp;4, the default terminal in GNOME.[^3]
-- [VTE Test App](https://gitlab.gnome.org/GNOME/vte/-/tree/0.76.0/src/app): GTK&nbsp;4, a test terminal that lives in the VTE repository.
-- [GNOME Terminal]: GTK&nbsp;3,[^4] used to be the default in GNOME, and is still shipped out of the box in several distributions.
+- [Console]: GTK 4, the default terminal in GNOME.[^3]
+- [VTE Test App](https://gitlab.gnome.org/GNOME/vte/-/tree/0.76.0/src/app): GTK 4, a test terminal that lives in the VTE repository.
+- [GNOME Terminal]: GTK 3,[^4] used to be the default in GNOME, and is still shipped out of the box in several distributions.
 
-Since the intention is to compare GNOME&nbsp;45 to GNOME&nbsp;46, I used {{< inline-html >}}<a href=https://containertoolbx.org>toolb<span style="font-size: small; opacity: 0.5;">\0</span>x</a>{{</ inline-html >}} containers with Fedora&nbsp;39 and Fedora&nbsp;40 to install and run all terminals above, as packaged by Fedora with no extra tweaks.
+Since the intention is to compare GNOME 45 to GNOME 46, I used {{< inline-html >}}<a href=https://containertoolbx.org>toolb<span style="font-size: small; opacity: 0.5;">\0</span>x</a>{{</ inline-html >}} containers with Fedora 39 and Fedora 40 to install and run all terminals above, as packaged by Fedora with no extra tweaks.
 
 I ran the terminals one by one and put their windows in the top left corner of the monitor.
 The mouse cursor was outside the window for all tests.[^5]
@@ -156,11 +154,11 @@ And here are the results:
 Alacritty, which is our baseline, did not change from F39 to F40, as expected.
 
 But look at the massive improvement on all of the VTE terminals!
-They went from *quite bad* to pretty much on par with Alacritty, even the GTK&nbsp;3 GNOME Terminal is very close.
+They went from *quite bad* to pretty much on par with Alacritty, even the GTK 3 GNOME Terminal is very close.
 
-The main change that caused this much improvement is likely [this one by Christian](https://gitlab.gnome.org/GNOME/vte/-/commit/c17d9c6b4571be0ab55c3818d9125233553bb7ee) that moves away from a 40&nbsp;Hz VTE repaint timer to drawing every frame, synchronized with the monitor, as any self-respecting GTK widget should do.
+The main change that caused this much improvement is likely [this one by Christian](https://gitlab.gnome.org/GNOME/vte/-/commit/c17d9c6b4571be0ab55c3818d9125233553bb7ee) that moves away from a 40 Hz VTE repaint timer to drawing every frame, synchronized with the monitor, as any self-respecting GTK widget should do.
 
-Console has a few outliers which are *maybe* caused by its process tracking, but those are nothing new (they may be looked into for GNOME&nbsp;47).
+Console has a few outliers which are *maybe* caused by its process tracking, but those are nothing new (they may be looked into for GNOME 47).
 
 For the next test, I constructed a more realistic case.
 I took [a snapshot of my neovim setup](https://github.com/YaLTeR/dotfiles/tree/d3976398058f2f5b6eee57c7e656ee8e7f098ac5/common/.config/_nvim_latency) and opened the README from [Ptyxis].
@@ -182,9 +180,9 @@ Here are the results:
 
 ![](./all-nvim.png)
 
-The massive improvement is clear on this test too, and our GNOME&nbsp;46 terminals are still pretty much on par with Alacritty!
+The massive improvement is clear on this test too, and our GNOME 46 terminals are still pretty much on par with Alacritty!
 
-Finally, let's take a closer look at all Fedora&nbsp;40 results on one plot:
+Finally, let's take a closer look at all Fedora 40 results on one plot:
 
 ![](./all-f40.png)
 
@@ -213,8 +211,8 @@ To avoid making this plot even busier, I drew the green arrows on only one of th
 As you can see, other benchmarks show a similar trend.
 {{</ image-figure >}}
 
-VTE from GNOME&nbsp;46 shows some welcome improvements here too, although a lot more varied, and not quite on par with Alacritty (which renders in a separate thread from reading and parsing).
-These improvements likely come from the many other optimizations that happened in VTE during the GNOME&nbsp;46 cycle.
+VTE from GNOME 46 shows some welcome improvements here too, although a lot more varied, and not quite on par with Alacritty (which renders in a separate thread from reading and parsing).
+These improvements likely come from the many other optimizations that happened in VTE during the GNOME 46 cycle.
 
 Note that I omitted two benchmarks from these results: `dense_cells` and `unicode`.
 They are the main stress tests of vtebench that hit the terminal really hard.
@@ -226,14 +224,14 @@ Unfortunately, VTE still struggles with them and shows a huge spread, which push
 
 ## Conclusion
 
-VTE had a round of massive performance improvements in GNOME&nbsp;46 which manifest as something you can really feel during normal terminal use.
+VTE had a round of massive performance improvements in GNOME 46 which manifest as something you can really feel during normal terminal use.
 The input latency is down to almost matching the fastest terminals, even in a non-trivial neovim setup with lots of complexity on screen.
 
 The remaining difference, at least on these test cases, is close to negligible.
-Some of it can be explained by VTE doing a bit more extra work for accessibility (enabled in GNOME Terminal and currently disabled in the GTK&nbsp;4 terminals), scrollbar calculations, and other features.
+Some of it can be explained by VTE doing a bit more extra work for accessibility (enabled in GNOME Terminal and currently disabled in the GTK 4 terminals), scrollbar calculations, and other features.
 
 If you've been avoiding VTE-based terminals due to *sluggishness* and input lag, now is the time to give them another chance.
-Just make sure you're running VTE&nbsp;0.76, which includes all of this goodness.
+Just make sure you're running VTE 0.76, which includes all of this goodness.
 
 Huge thanks to the VTE maintainers and contributors for making this a reality, and congratulations on an awesome release!
 
@@ -249,7 +247,7 @@ Thankfully, it wasn't hard to fix, and easy to verify afterward by redoing the s
 [^3]: Your distribution may have a different idea of which terminal should be the default in its GNOME spin.
 For example, Fedora still ships GNOME Terminal by default.
 
-[^4]: GNOME Terminal is being ported to GTK&nbsp;4 for GNOME&nbsp;47, but in GNOME&nbsp;46 it is still a GTK&nbsp;3 application.
+[^4]: GNOME Terminal is being ported to GTK 4 for GNOME 47, but in GNOME 46 it is still a GTK 3 application.
 
 [^5]: To avoid the link-under-cursor detection logic skewing the results.
 
