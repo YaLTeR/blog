@@ -10,6 +10,7 @@ permalinks:
 markup:
   highlight:
     style: pygments
+    noClasses: false
 
 social:
   email: mailto:yalterz@gmail.com

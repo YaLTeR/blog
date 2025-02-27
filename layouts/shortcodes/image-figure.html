@@ -1,6 +1,8 @@
 {{- $url := "" }}
+{{- $dark_url := "" }}
 {{- if .IsNamedParams -}}
     {{- $url = .Get "src" -}}
+    {{- $dark_url = .Get "src-dark" -}}
 {{- else -}}
     {{- $url = .Get 0 -}}
 {{- end -}}
@@ -12,10 +14,23 @@
         {{- $url = (print .Page.Permalink $url) -}}
     {{- end -}}
 {{- end -}}
+{{- if $dark_url -}}
+    {{- $d := urls.Parse $dark_url -}}
+    {{- if not $d.IsAbs -}}
+        {{- if strings.HasPrefix $dark_url "/" -}}
+            {{- $dark_url = (print .Page.Site.BaseURL (strings.TrimPrefix "/" $dark_url)) -}}
+        {{- else -}}
+            {{- $dark_url = (print .Page.Permalink $dark_url) -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
 <figure>
     <a href="{{ $url | safeURL }}">
     {{ if .IsNamedParams }}
-    <img src="{{ $url | safeURL }}" {{ with .Get "width" }}width="{{ . }}"{{ end }} {{ with .Get "alt" }}alt="{{ . }}"{{ end }} />
+    <picture>
+        {{ if $dark_url }}<source srcset="{{ $dark_url | safeURL }}" media="(prefers-color-scheme: dark)">{{ end }}
+        <img src="{{ $url | safeURL }}" {{ with .Get "width" }}width="{{ . }}"{{ end }} {{ with .Get "alt" }}alt="{{ . }}"{{ end }} />
+    </picture>
     {{ else }}
     <img src="{{ $url | safeURL }}" />
     {{ end }}

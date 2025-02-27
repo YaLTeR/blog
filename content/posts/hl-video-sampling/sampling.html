@@ -1,4 +1,24 @@
 <style>
+    :root {
+        --frame-bg: white;
+        --frame-border: white;
+        --frame-outline: lightgray;
+        --sampled-border: #009b00;
+        --sampled-outline: #004f00;
+        --shadow-color: rgba(0.4, 0.4, 0.4, 0.8);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --frame-bg: #262626;
+            --frame-border: #333;
+            --frame-outline: #555;
+            --sampled-border: #008000;
+            --sampled-outline: #004f00;
+            --shadow-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+
     #samplingPlayground {
         display: flex;
         flex-direction: column;
@@ -13,11 +33,11 @@
     #frames > img {
         width: 68px;
         aspect-ratio: 68 / 40;
-        background-color: white;
+        background-color: var(--frame-bg);
         margin: 0 -64px 0 0;
-        border: 2px solid white;
+        border: 2px solid var(--frame-border);
         border-radius: 6px;
-        outline: 1px solid lightgray;
+        outline: 1px solid var(--frame-outline);
     }
 
     #frames > img:last-child {
@@ -25,12 +45,12 @@
     }
 
     #frames > .sampled {
-        border-color: #009b00;
-        outline-color: #004f00;
+        border-color: var(--sampled-border);
+        outline-color: var(--sampled-outline);
     }
 
     .green {
-        color: #009b00;
+        color: var(--sampled-border);
     }
 
     #sampling {
@@ -39,7 +59,7 @@
         max-width: 640px;
         aspect-ratio: 16 / 9;
         margin: 0 auto;
-        box-shadow: 0 0 10px rgba(0.4, 0.4, 0.4, 0.8);
+        box-shadow: 0 0 10px var(--shadow-color);
     }
 
     #samplingContainer {
