@@ -28,4 +28,3 @@ params:
 
   env: production
   enableComments: false
-  enableGoogleAnalytics: false
