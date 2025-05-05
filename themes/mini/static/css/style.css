@@ -9,6 +9,7 @@
 }
 
 :root {
+    color-scheme: light dark;
     --bg-color: #ffffff;
     --text-color: #000000;
     --secondary-text-color: #404040;
