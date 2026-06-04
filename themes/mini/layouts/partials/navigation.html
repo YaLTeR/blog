@@ -9,7 +9,11 @@
 		<a href="{{ $element.path }}">{{ $element.name }}</a>
 	{{ end }}
 
-	{{ with .OutputFormats.Get "RSS" | default (.Site.Home.OutputFormats.Get "RSS") }}
+	{{ $rss := .OutputFormats.Get "RSS" }}
+	{{- if not $rss.Permalink -}}
+		{{- $rss = .Site.Home.OutputFormats.Get "RSS" -}}
+	{{- end -}}
+	{{ with $rss }}
 		<a class="button" href="{{ .Permalink }}">
 			{{ with $.Site.Params.subscribe }}{{ . }}{{ else }}Subscribe{{ end }}
 		</a>
