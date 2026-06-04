@@ -19,6 +19,7 @@
     --link-visited: #613583;
     --border-color: #dadadc;
     --code-bg: #f1f1f1;
+    --kbd-shadow: #c8c8c8;
     --blockquote-border: #999;
     --hr-color: #eee;
     --table-alt-bg: #fcfcfc;
@@ -35,6 +36,7 @@
         --link-visited: #dc8add;
         --border-color: #404040;
         --code-bg: #262626;
+        --kbd-shadow: #111;
         --blockquote-border: #666;
         --hr-color: #333;
         --table-alt-bg: #222;
@@ -163,6 +165,17 @@ pre, pre.chroma {
 code {
   font-size: 14px;
   line-height: 1.7;
+}
+
+kbd {
+  display: inline-block;
+  padding: 0.1em 0.6em;
+  border: 1px solid var(--border-color);
+  border-radius: 0.35em;
+  background: var(--code-bg);
+  box-shadow: 0 -2px var(--kbd-shadow) inset;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 /* Links that run JS rather than being hyperlinks. */
