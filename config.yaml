@@ -24,8 +24,13 @@ params:
   enableComments: false
 
   social:
-    email: mailto:yalterz@gmail.com
-    mastodon: https://mastodon.online/@YaLTeR
-    twitter: https://twitter.com/YaLTeRz
-    github: https://github.com/YaLTeR
-    gitlab: https://gitlab.gnome.org/YaLTeR
+    - name: email
+      url: mailto:yalterz@gmail.com
+    - name: mastodon
+      url: https://mastodon.online/@YaLTeR
+    - name: twitter
+      url: https://twitter.com/YaLTeRz
+    - name: github
+      url: https://github.com/YaLTeR
+    - name: gitlab
+      url: https://gitlab.gnome.org/YaLTeR

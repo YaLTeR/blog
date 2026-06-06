@@ -1,9 +1,9 @@
 <div id="social">
 
-{{ range $key, $val := .Site.Params.Social -}}
-    <a class="symbol" href="{{ $val }}" target="_blank" rel="me" aria-label="{{ $key }}">
-        {{- $svg :=  print "svgs/" $key ".svg" -}}
-        {{- partial $svg . -}}
+{{ range .Site.Params.Social -}}
+    <a class="symbol" href="{{ .url }}" target="_blank" rel="me" aria-label="{{ .name }}">
+        {{- $svg :=  print "svgs/" .name ".svg" -}}
+        {{- partial $svg $ -}}
     </a>
 {{- end }}
 
