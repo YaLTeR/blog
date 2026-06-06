@@ -13,9 +13,9 @@
     --bg-color: #ffffff;
     --text-color: #000000;
     --secondary-text-color: #404040;
-    --tertiary-text-color: #bbbbbb;
+    --tertiary-text-color: #707070;
     --link-color: #0035b1;
-    --nav-link-color: #5b99f0;
+    --nav-link-color: #4b6fdc;
     --link-visited: #613583;
     --border-color: #dadadc;
     --code-bg: #f1f1f1;
@@ -71,7 +71,7 @@ table {
   width: 100%;
   margin: 40px 0;
   border-collapse: collapse;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 th, td {
@@ -81,7 +81,6 @@ th, td {
 }
 
 table td, td {
-  border-spacing: none;
   border-style: solid;
   padding: 10px 15px;
   border-width: 1px 0 0 0;
@@ -212,7 +211,6 @@ a:visited {
 
 nav.navigation {
   padding: 20px 20px 0;
-  background: rgba(var(--bg-color), 0.9);
   margin: 0 auto;
   text-align: right;
   z-index: 100;
@@ -238,8 +236,6 @@ nav.navigation a.button {
 @media (max-width: 700px) {
   nav.navigation {
     padding: 20px 10px 0 0;
-    background: var(--bg-color);
-    background: rgba(var(--bg-color), 0.9);
     margin: 0 auto;
     text-align: right;
     z-index: 100;

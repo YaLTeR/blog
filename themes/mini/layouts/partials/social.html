@@ -1,7 +1,7 @@
 <div id="social">
 
 {{ range $key, $val := .Site.Params.Social -}}
-    <a class="symbol" href="{{ $val }}" target="_blank" rel="me">
+    <a class="symbol" href="{{ $val }}" target="_blank" rel="me" aria-label="{{ $key }}">
         {{- $svg :=  print "svgs/" $key ".svg" -}}
         {{- partial $svg . -}}
     </a>

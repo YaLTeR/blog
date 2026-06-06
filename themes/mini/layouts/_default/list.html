@@ -4,9 +4,9 @@
 <section id="archive">
     {{ range .Data.Pages.GroupByDate "2006" }}
         <div class="group">
-            <h3 class="key">
+            <h2 class="key">
                 {{ .Key }}
-            </h3>
+            </h2>
 
             {{ range .Pages }}
                 <div class="value">
