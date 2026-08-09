@@ -15,27 +15,5 @@
       {{ end }}
     </div>
   </div>
-
-  {{ with .Site.Params.readMore }}
-      <h2 class="read-more">{{ . }}</h2> 
-  {{ else }}
-      <h2 class="read-more">Read More</h2> 
-  {{ end }}
-
-  
-
-
-    {{ $pages := .Site.RegularPages }}
-    {{ $paginator := .Paginate ($pages) }}
-    {{ range $paginator.Pages }}
-        {{ $title := .Title }}
-        {{ $date := dateFormat "Jan 2, 2006" .Date }}
-        <section class="item">
-          <div>
-            <h3 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h3>   
-            <div class="date">{{ $date }}</div>
-          </div>
-        </section>
-    {{ end }}
 </div>
 {{ end }}

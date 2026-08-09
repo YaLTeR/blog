@@ -1,6 +1,6 @@
 # Make sure there's a trailing slash!
 baseURL: https://bxt.rs/
-languageCode: en-us
+locale: en-us
 title: Ivan Molodetskikh’s Webpage
 theme: mini
 
@@ -14,6 +14,10 @@ markup:
 
 taxonomies:
   tag: tags
+
+security:
+  allowContent:
+    - '.*'
 
 params:
   author: Ivan Molodetskikh
