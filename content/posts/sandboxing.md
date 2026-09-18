@@ -113,8 +113,8 @@ BWRAP=( bwrap
   # Unshare (isolate) a bunch of things inside the sandbox.
   --unshare-pid
   --unshare-uts
-  --unshare-cgroup-try
-  --unshare-user-try
+  --unshare-cgroup
+  --unshare-user
   --cap-drop ALL
   # Create/mount important folders.
   --proc /proc
@@ -129,6 +129,10 @@ BWRAP=( bwrap
   # If on your system the environment can contain secrets,
   # you may want to clear them:
   # --clearenv
+
+  # Sandbox cannot access the host tmux.
+  --unsetenv TMUX
+  --unsetenv TMUX_PANE
 
   # Bind the current folder read-write and chdir there.
   --bind "$REPO" "$REPO"
@@ -157,7 +161,9 @@ SYS_RO_BINDS=(
   # I fill these as I bump into problems, more or less.
   /etc/java
   /etc/texlive
+  /etc/apt
   /var/lib/texmf
+  /var/lib/command-not-found
   /usr/lib/jvm
   /usr/share/java
 )
@@ -211,6 +217,7 @@ done
 # will not affect the host filesystem.
 HOME_TMP_OVERLAYS=(
   .cache/fontconfig
+  .cache/uv
   .cargo/registry
   .cargo/git
   .gradle
@@ -236,6 +243,28 @@ exec "${BWRAP[@]}" "${CMD[@]}"
 
 Many lines, but most of them are just listing directories to mount.
 
+For access to GPU for graphics and compute, we need to pass a few more devices:
+
+```bash
+# Export PASS_DRI=1 to enable DRI (GPU) access for hardware acceleration.
+PASS_DRI="${PASS_DRI:-0}"
+
+if [[ "$PASS_DRI" -eq 1 ]]; then
+  [[ -d /dev/dri ]] && BWRAP+=( --dev-bind /dev/dri /dev/dri )
+
+  # ROCm/HIP compute.
+  [[ -c /dev/kfd ]] && BWRAP+=( --dev-bind /dev/kfd /dev/kfd )
+
+  # CUDA compute and Unified Memory.
+  for p in /dev/nvidiactl /dev/nvidia-uvm /dev/nvidia[0-9]*; do
+    [[ -c "$p" ]] && BWRAP+=( --dev-bind "$p" "$p" )
+  done
+fi
+
+# EGL complains without this.
+BWRAP+=( --ro-bind /sys /sys )
+```
+
 If you want to run GUI apps in the sandbox, you'll need to create an `XDG_RUNTIME_DIR` and mount a Wayland socket:
 
 ```bash
@@ -245,18 +274,8 @@ If you want to run GUI apps in the sandbox, you'll need to create an `XDG_RUNTIM
 # for an example of what that implies.
 PASS_WAYLAND="${PASS_WAYLAND:-0}"
 
-# Export PASS_DRI=1 to enable DRI (GPU) access for hardware acceleration.
-PASS_DRI="${PASS_DRI:-0}"
-
 # Export PASS_X11=1 to enable X11 (Xwayland) access.
 PASS_X11="${PASS_X11:-0}"
-
-if [[ "$PASS_DRI" -eq 1 && -d /dev/dri ]]; then
-  BWRAP+=( --dev-bind /dev/dri /dev/dri )
-fi
-
-# EGL complains without this.
-BWRAP+=( --ro-bind /sys /sys )
 
 # Wayland: bind only the socket into a fresh runtime dir.
 XDG_RT="${XDG_RUNTIME_DIR:-}"
@@ -279,6 +298,16 @@ if [[ "$PASS_X11" -eq 1 && -n "$DISPLAY_VAR" && -d /tmp/.X11-unix ]]; then
 else
   # Make it harder for accidental X11: unset DISPLAY.
   BWRAP+=( --unsetenv DISPLAY )
+fi
+```
+
+And if you want KVM for virtualization:
+
+```bash
+PASS_KVM="${PASS_KVM:-1}"
+
+if [[ "$PASS_KVM" -eq 1 ]]; then
+  [[ -c /dev/kvm ]] && BWRAP+=( --dev-bind /dev/kvm /dev/kvm )
 fi
 ```
 
@@ -319,3 +348,11 @@ I tried once briefly, but kept hitting weird errors.
 Maybe it needs some capabilities exposed; not sure.
 
 This is also obviously not intended as a bulletproof sandbox for running fully untrusted code, in fact I wouldn't be too surprised if I left some gaping holes by mistake (please let me know if I did).
+
+## Updates
+
+18.09.2026:
+
+- Added ROCm/HIP and CUDA to `PASS_DRI`.
+- Added `PASS_KVM`.
+- Added a few more variables and folders.
