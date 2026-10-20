@@ -3,6 +3,7 @@ baseURL: https://bxt.rs/
 locale: en-us
 title: Ivan Molodetskikh’s Webpage
 theme: mini
+disableHugoGeneratorInject: true
 
 permalinks:
   posts: /blog/:title/
