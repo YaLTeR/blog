@@ -186,6 +186,11 @@ if [[ "$ALLOW_NET" -eq 0 ]]; then
   BWRAP+=( --unshare-net )
 fi
 
+# Create a private runtime dir.
+SBOX_RT=/run/user/1000-sbox
+BWRAP+=( --dir "$SBOX_RT"
+         --setenv XDG_RUNTIME_DIR "$SBOX_RT" )
+
 # Create a fresh home directory.
 # The username and the path is the same as on the host
 # so that everything keeps working.
@@ -205,7 +210,6 @@ HOME_RO_BINDS=(
   .gitconfig
   .config/git
   .config/tmux
-  .cache/ms-playwright
   .cache/corepack
 )
 for rel in "${HOME_RO_BINDS[@]}"; do
@@ -218,6 +222,7 @@ done
 HOME_TMP_OVERLAYS=(
   .cache/fontconfig
   .cache/uv
+  .cache/ms-playwright
   .cargo/registry
   .cargo/git
   .gradle
@@ -265,7 +270,7 @@ fi
 BWRAP+=( --ro-bind /sys /sys )
 ```
 
-If you want to run GUI apps in the sandbox, you'll need to create an `XDG_RUNTIME_DIR` and mount a Wayland socket:
+If you want to run GUI apps in the sandbox, you'll need to bind the Wayland socket into the runtime dir:
 
 ```bash
 # Export PASS_WAYLAND=1 to enable Wayland access.
@@ -277,14 +282,11 @@ PASS_WAYLAND="${PASS_WAYLAND:-0}"
 # Export PASS_X11=1 to enable X11 (Xwayland) access.
 PASS_X11="${PASS_X11:-0}"
 
-# Wayland: bind only the socket into a fresh runtime dir.
+# Wayland.
 XDG_RT="${XDG_RUNTIME_DIR:-}"
 WAYLAND_SOCK="${WAYLAND_DISPLAY:-wayland-0}"
 if [[ "$PASS_WAYLAND" -eq 1 && -n "$XDG_RT" && -S "$XDG_RT/$WAYLAND_SOCK" ]]; then
-  BWRAP+=( --dir /run/user
-           --dir /run/user/1000-sbox
-           --bind "$XDG_RT/$WAYLAND_SOCK" "/run/user/1000-sbox/$WAYLAND_SOCK"
-           --setenv XDG_RUNTIME_DIR /run/user/1000-sbox
+  BWRAP+=( --bind "$XDG_RT/$WAYLAND_SOCK" "$SBOX_RT/$WAYLAND_SOCK"
            --setenv WAYLAND_DISPLAY "$WAYLAND_SOCK" )
 else
   BWRAP+=( --unsetenv WAYLAND_DISPLAY )
@@ -301,7 +303,21 @@ else
 fi
 ```
 
-And if you want KVM for virtualization:
+If you need to expose audio playback and recording through PipeWire:
+
+```bash
+# Export PASS_AUDIO=1 to enable PipeWire access.
+# Warning: this grants access to all PipeWire nodes,
+# both capture and playback.
+PASS_AUDIO="${PASS_AUDIO:-0}"
+
+if [[ "$PASS_AUDIO" -eq 1 && -n "$XDG_RT" && -S "$XDG_RT/pipewire-0" ]]; then
+  BWRAP+=( --bind "$XDG_RT/pipewire-0" "$SBOX_RT/pipewire-0" )
+fi
+BWRAP+=( --unsetenv PIPEWIRE_REMOTE )
+```
+
+If you want KVM for virtualization:
 
 ```bash
 PASS_KVM="${PASS_KVM:-1}"
@@ -356,3 +372,8 @@ This is also obviously not intended as a bulletproof sandbox for running fully u
 - Added ROCm/HIP and CUDA to `PASS_DRI`.
 - Added `PASS_KVM`.
 - Added a few more variables and folders.
+
+20.10.2026:
+
+- Added `PASS_AUDIO`.
+- Moved `.cache/ms-playwright` from RO to temp overlays.
